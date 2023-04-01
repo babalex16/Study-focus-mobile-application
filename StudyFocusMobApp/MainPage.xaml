@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudyFocusMobApp.MainPage">
+
+    <StackLayout>
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <!-- top controls -->
+            <Label Text="Test"></Label>
+        </HorizontalStackLayout>
+        
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <!-- middle controls -->
+            <Label Text="Test"></Label>
+        </StackLayout>
+        
+        <HorizontalStackLayout Padding="20" Margin="20" Spacing="70"  HorizontalOptions="Center">
+            <!-- bottom controls -->
+            <ImageButton Source="notifications_off.svg"></ImageButton>
+            <ImageButton Source="settings.svg"></ImageButton>
+            <ImageButton Source="music_note.svg"></ImageButton>
+            
+            
+        </HorizontalStackLayout>
+    </StackLayout>
+
+</ContentPage>
