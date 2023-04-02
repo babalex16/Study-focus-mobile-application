@@ -1,8 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:drawables="clr-namespace:StudyFocusMobApp.Drawables"
              x:Class="StudyFocusMobApp.MainPage">
 
+    <ContentPage.Resources>
+        <drawables:RadialTimerDrawable x:Key="radialTimerDrawable"/>
+    </ContentPage.Resources>
+    
     <StackLayout>
         <HorizontalStackLayout HorizontalOptions="Center">
             <!-- top controls -->
@@ -11,7 +16,38 @@
         
         <StackLayout VerticalOptions="CenterAndExpand">
             <!-- middle controls -->
-            <Label Text="Test"></Label>
+            <Grid ColumnDefinitions="*,*,*"
+                  RowDefinitions="Auto,*,Auto">
+                <Label  Grid.Column="1"
+                Grid.Row="0"
+                Text="Current time is: "/>
+
+                <GraphicsView Drawable="{StaticResource radialTimerDrawable}"
+                      x:Name="RadialTimerGraphicsView"
+                      Grid.Column="0"
+                      Grid.Row="1"
+                      Grid.ColumnSpan="3"
+                      HeightRequest="400">
+                </GraphicsView>
+
+                <HorizontalStackLayout Grid.Column="0"
+                               Grid.Row="3"
+                               Grid.ColumnSpan="3"
+                               HorizontalOptions="Center">
+                    <Button Text="Start"
+                    BackgroundColor="Red"
+                    CornerRadius="40"
+                    TextColor="White"
+                    Margin="10,10,45,10"/>
+
+                    <Button Text="Stop"
+                    BackgroundColor="Blue"
+                    TextColor="White"
+                    CornerRadius="40"
+                    Margin="45,10,10,10"/>
+
+                </HorizontalStackLayout>
+            </Grid>
         </StackLayout>
         
         <HorizontalStackLayout Padding="20" Margin="20" Spacing="70"  HorizontalOptions="Center">
