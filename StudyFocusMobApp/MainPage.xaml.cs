@@ -1,12 +1,12 @@
 ﻿using System.Timers;
 using System.Xml.Linq;
 using Syncfusion.Maui.Popup;
+using Syncfusion.Maui.Sliders;
 namespace StudyFocusMobApp;
 
 public partial class MainPage : ContentPage
 {
     private int remainingTimeInSeconds;
-    SfPopup popup = new SfPopup();
     public MainPage()
 	{
         InitializeComponent();

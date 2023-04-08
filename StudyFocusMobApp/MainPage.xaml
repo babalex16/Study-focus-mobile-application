@@ -2,8 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:drawables="clr-namespace:StudyFocusMobApp.Drawables"
-             x:Class="StudyFocusMobApp.MainPage"
-             xmlns:popup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup">
+             xmlns:popup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
+             xmlns:sliders="clr-namespace:Syncfusion.Maui.Sliders;assembly=Syncfusion.Maui.Sliders"
+             x:Class="StudyFocusMobApp.MainPage">
 
     <ContentPage.Resources>
         <drawables:RadialTimerDrawable x:Key="radialTimerDrawable"/>
@@ -62,9 +63,34 @@
         <HorizontalStackLayout Padding="20" Margin="20" Spacing="70"  HorizontalOptions="Center">
             <!-- bottom controls -->
             <ImageButton Source="notifications_off.svg"></ImageButton>
+            <ImageButton Source="music_note.svg"></ImageButton>
             <ImageButton Source="settings.svg"
                          Clicked="SettingsButton_Clicked" />
-            <ImageButton Source="music_note.svg"></ImageButton>
+            <popup:SfPopup x:Name="popup" 
+                           AppearanceMode="OneButton" 
+                           ShowFooter="True"
+                           HeaderTitle="Pick a time">
+                <popup:SfPopup.ContentTemplate>
+                    <DataTemplate>
+                        <sliders:SfSlider Minimum="10"
+                                          Maximum="60"
+                                          Value="30"
+                                          Interval="10"
+                                          ShowTicks="True"
+                                          ShowLabels="True"
+                                          MinorTicksPerInterval="1" >
+                            <sliders:SfSlider.ThumbStyle>
+                                <sliders:SliderThumbStyle Fill="#D8CC5E" />
+                            </sliders:SfSlider.ThumbStyle>
+                            <sliders:SfSlider.TrackStyle>
+                                <sliders:SliderTrackStyle ActiveFill="#ECE08E"
+                                                          InactiveFill="#F3EBA3" />
+                            </sliders:SfSlider.TrackStyle>
+                                
+                        </sliders:SfSlider>
+                    </DataTemplate>
+                </popup:SfPopup.ContentTemplate>
+            </popup:SfPopup>
             
             
         </HorizontalStackLayout>

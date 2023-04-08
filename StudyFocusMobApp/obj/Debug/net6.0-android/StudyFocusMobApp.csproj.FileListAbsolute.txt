@@ -990,3 +990,4 @@ D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-a
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\stamp\_GenerateJavaStubs.stamp
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\stamp\_GeneratePackageManagerJava.stamp
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
+D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\Syncfusion.Maui.Sliders.dll
