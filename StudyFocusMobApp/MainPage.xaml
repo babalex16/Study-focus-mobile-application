@@ -2,14 +2,15 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:drawables="clr-namespace:StudyFocusMobApp.Drawables"
-             x:Class="StudyFocusMobApp.MainPage">
+             x:Class="StudyFocusMobApp.MainPage"
+             xmlns:popup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup">
 
     <ContentPage.Resources>
         <drawables:RadialTimerDrawable x:Key="radialTimerDrawable"/>
     </ContentPage.Resources>
     
     <StackLayout>
-        <HorizontalStackLayout HorizontalOptions="Center">
+        <HorizontalStackLayout HorizontalOptions="Center"> 
             <!-- top controls -->
             <Label Text="Test"></Label>
         </HorizontalStackLayout>
@@ -18,9 +19,15 @@
             <!-- middle controls -->
             <Grid ColumnDefinitions="*,*,*"
                   RowDefinitions="Auto,*,Auto">
-                <Label  Grid.Column="1"
-                Grid.Row="0"
-                Text="Current time is: "/>
+                <Label  x:Name="RemainingTimeLabel"
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        Text="Current time is: "/>
+                <Entry x:Name="MinutesEntry"
+                       Grid.Column="1"
+                       Grid.Row="0"
+                       Placeholder="Enter text"
+                        />
 
                 <GraphicsView Drawable="{StaticResource radialTimerDrawable}"
                       x:Name="RadialTimerGraphicsView"
@@ -35,12 +42,14 @@
                                Grid.ColumnSpan="3"
                                HorizontalOptions="Center">
                     <Button Text="Start"
+                            Clicked="StartButton_Clicked"
                     BackgroundColor="Red"
                     CornerRadius="40"
                     TextColor="White"
                     Margin="10,10,45,10"/>
 
                     <Button Text="Stop"
+                            Clicked="StopButton_Clicked"
                     BackgroundColor="Blue"
                     TextColor="White"
                     CornerRadius="40"
@@ -53,7 +62,8 @@
         <HorizontalStackLayout Padding="20" Margin="20" Spacing="70"  HorizontalOptions="Center">
             <!-- bottom controls -->
             <ImageButton Source="notifications_off.svg"></ImageButton>
-            <ImageButton Source="settings.svg"></ImageButton>
+            <ImageButton Source="settings.svg"
+                         Clicked="SettingsButton_Clicked" />
             <ImageButton Source="music_note.svg"></ImageButton>
             
             

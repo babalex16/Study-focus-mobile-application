@@ -10,6 +10,10 @@ D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\bin\Debug\net6.0-i
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\bin\Debug\net6.0-ios\iossimulator-x64\Microsoft.Extensions.Options.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\bin\Debug\net6.0-ios\iossimulator-x64\Microsoft.Extensions.Primitives.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\bin\Debug\net6.0-ios\iossimulator-x64\Microsoft.Maui.Graphics.dll
+D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\bin\Debug\net6.0-ios\iossimulator-x64\Syncfusion.Licensing.dll
+D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\bin\Debug\net6.0-ios\iossimulator-x64\Syncfusion.Maui.Core.dll
+D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\bin\Debug\net6.0-ios\iossimulator-x64\Syncfusion.Maui.Popup.dll
+D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\bin\Debug\net6.0-ios\iossimulator-x64\en-US\Syncfusion.Maui.Popup.resources.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\bin\Debug\net6.0-ios\iossimulator-x64\Microsoft.CSharp.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\bin\Debug\net6.0-ios\iossimulator-x64\Microsoft.VisualBasic.Core.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\bin\Debug\net6.0-ios\iossimulator-x64\Microsoft.VisualBasic.dll

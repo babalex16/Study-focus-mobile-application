@@ -54,4 +54,8 @@
 	  <None Remove="Resources\Images\settings.svg" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <PackageReference Include="Syncfusion.Maui.Popup" Version="21.1.38" />
+	</ItemGroup>
+
 </Project>

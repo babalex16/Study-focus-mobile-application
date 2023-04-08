@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NU8mil7nJ9s6JbJv/nWDedlyYLqSWu9KifZIYGRSRNpIDYOvnyav/fuBF+VA5q0u7E+oxy6yhemR2i4iADSU3Q==",
+  "dgSpecHash": "cOparKQn2MpgnQut25wViedXg+nVl1bvzyNajWGRAEjF4HanvfTfbhIDvpkKVxY3o453ORqYFyJEa/rrTHsspg==",
   "success": true,
   "projectFilePath": "D:\\ProjectLab\\Study-focus-mobile-application\\StudyFocusMobApp\\StudyFocusMobApp.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,9 @@
     "C:\\Users\\sasha\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\6.0.501\\microsoft.maui.graphics.win2d.winui.desktop.6.0.501.nupkg.sha512",
     "C:\\Users\\sasha\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22000.194\\microsoft.windows.sdk.buildtools.10.0.22000.194.nupkg.sha512",
     "C:\\Users\\sasha\\.nuget\\packages\\microsoft.windowsappsdk\\1.1.5\\microsoft.windowsappsdk.1.1.5.nupkg.sha512",
+    "C:\\Users\\sasha\\.nuget\\packages\\syncfusion.maui.core\\21.1.38\\syncfusion.maui.core.21.1.38.nupkg.sha512",
+    "C:\\Users\\sasha\\.nuget\\packages\\syncfusion.maui.popup\\21.1.38\\syncfusion.maui.popup.21.1.38.nupkg.sha512",
+    "C:\\Users\\sasha\\.nuget\\packages\\syncfusion.maui.sliders\\21.1.38\\syncfusion.maui.sliders.21.1.38.nupkg.sha512",
     "C:\\Users\\sasha\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\sasha\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\sasha\\.nuget\\packages\\system.runtime.interopservices.nfloat.internal\\6.0.1\\system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512",
