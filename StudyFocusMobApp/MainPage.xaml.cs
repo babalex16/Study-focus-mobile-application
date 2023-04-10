@@ -6,26 +6,20 @@ namespace StudyFocusMobApp;
 
 public partial class MainPage : ContentPage
 {
+    private int timeInSeconds;
     private int remainingTimeInSeconds;
+    private double CoveredTimePercentage { get; set; } = 0.0;
     public MainPage()
 	{
         InitializeComponent();
-        var timer = new System.Timers.Timer(1000);
-        timer.Elapsed += new ElapsedEventHandler(RedrawClock);
-        timer.Start();
-    }
-
-    public void RedrawClock(object source, ElapsedEventArgs e)
-    {
-        var graphicsView = this.RadialTimerGraphicsView;
-
-        graphicsView.Invalidate();
+        BindingContext = this;
     }
 
     private void StartButton_Clicked(object sender, EventArgs e)
     {
         if (int.TryParse(MinutesEntry.Text, out int minutes))
         {
+            timeInSeconds = minutes * 60;
             remainingTimeInSeconds = minutes * 60;
             CountDown();
         }
@@ -38,9 +32,11 @@ public partial class MainPage : ContentPage
     {
         while (remainingTimeInSeconds > 0)
         {
-            RemainingTimeLabel.Text = TimeSpan.FromSeconds(remainingTimeInSeconds).ToString(@"mm\:ss");
+            //RemainingTimeLabel.Text = TimeSpan.FromSeconds(remainingTimeInSeconds).ToString(@"mm\:ss");
+            RemainingTimeLabel.Text = CoveredTimePercentage.ToString();
             await Task.Delay(1000);
             remainingTimeInSeconds--;
+            CalculatePercentage();
         }
         RemainingTimeLabel.Text = "00:00";
     }
@@ -53,6 +49,10 @@ public partial class MainPage : ContentPage
     private void SettingsButton_Clicked(object sender, EventArgs e)
     {
         popup.Show();
+    }
+    private void CalculatePercentage() 
+    {
+        CoveredTimePercentage = Math.Round(100 - ((double)remainingTimeInSeconds / (double)timeInSeconds)*100, 2);
     }
 }
 

@@ -6,6 +6,7 @@ Microsoft.Maui.dll
 Microsoft.Maui.Essentials.dll
 Microsoft.Maui.Graphics.dll
 Syncfusion.Maui.Core.dll
+Syncfusion.Maui.Gauges.dll
 Syncfusion.Maui.Popup.dll
 Syncfusion.Maui.Sliders.dll
 Xamarin.Android.Glide.Annotations.dll

@@ -12,7 +12,9 @@
           "Microsoft.Maui.Dependencies": "6.0.552",
           "Microsoft.Maui.Extensions": "6.0.552",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194",
+          "Syncfusion.Maui.Gauges": "21.1.38",
           "Syncfusion.Maui.Popup": "21.1.38",
+          "Syncfusion.Maui.Sliders": "21.1.38",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "6.0.15",
           "runtimepack.Microsoft.Maui.Core.Runtime.win": "6.0.552",
           "runtimepack.Microsoft.Maui.Controls.Runtime.win": "6.0.552",
@@ -1115,6 +1117,17 @@
           }
         }
       },
+      "Syncfusion.Maui.Gauges/21.1.38": {
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38"
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041.0/Syncfusion.Maui.Gauges.dll": {
+            "assemblyVersion": "21.1.38.0",
+            "fileVersion": "21.1.38.0"
+          }
+        }
+      },
       "Syncfusion.Maui.Popup/21.1.38": {
         "dependencies": {
           "Syncfusion.Maui.Core": "21.1.38"
@@ -1128,6 +1141,17 @@
         "resources": {
           "lib/net6.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Popup.resources.dll": {
             "locale": "en-US"
+          }
+        }
+      },
+      "Syncfusion.Maui.Sliders/21.1.38": {
+        "dependencies": {
+          "Syncfusion.Maui.Core": "21.1.38"
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041.0/Syncfusion.Maui.Sliders.dll": {
+            "assemblyVersion": "21.1.38.0",
+            "fileVersion": "21.1.38.0"
           }
         }
       },
@@ -1282,12 +1306,26 @@
       "path": "syncfusion.maui.core/21.1.38",
       "hashPath": "syncfusion.maui.core.21.1.38.nupkg.sha512"
     },
+    "Syncfusion.Maui.Gauges/21.1.38": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fiF7EIhWJtF4I7t7lBCJcjYuZQXg4kzw8p8RVi0PpPX5Gmyd6cMbqHgqffoAenFW3YXapHjbEFqppZfL6rSscQ==",
+      "path": "syncfusion.maui.gauges/21.1.38",
+      "hashPath": "syncfusion.maui.gauges.21.1.38.nupkg.sha512"
+    },
     "Syncfusion.Maui.Popup/21.1.38": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-9DCi39eAXdMpCL6pF9lRiw7Ze+bbtuo2KIKq7wfhsKq7fbfeI4/282vsXkhp3JVlSOlmYV9gZIpUL41MUCZoYQ==",
       "path": "syncfusion.maui.popup/21.1.38",
       "hashPath": "syncfusion.maui.popup.21.1.38.nupkg.sha512"
+    },
+    "Syncfusion.Maui.Sliders/21.1.38": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A1KC8eLeksbs0Xfd2r9+Y/G2qv3Z5qdlkUeJrQSFOwCQLdDqGczI4sUBqUkDhpQ8KX825GvdUlX9yaAT2ZkeMA==",
+      "path": "syncfusion.maui.sliders/21.1.38",
+      "hashPath": "syncfusion.maui.sliders.21.1.38.nupkg.sha512"
     },
     "System.Diagnostics.DiagnosticSource/6.0.0": {
       "type": "package",

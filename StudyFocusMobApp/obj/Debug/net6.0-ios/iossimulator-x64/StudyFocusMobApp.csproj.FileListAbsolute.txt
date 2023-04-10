@@ -277,3 +277,5 @@ D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-i
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-ios\iossimulator-x64\StudyFocusMobApp.pdb
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-ios\iossimulator-x64\StudyFocusMobApp.genruntimeconfig.cache
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-ios\iossimulator-x64\ref\StudyFocusMobApp.dll
+D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\bin\Debug\net6.0-ios\iossimulator-x64\Syncfusion.Maui.Gauges.dll
+D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\bin\Debug\net6.0-ios\iossimulator-x64\Syncfusion.Maui.Sliders.dll

@@ -20,6 +20,7 @@ public class MonoPackageManager_Resources {
 		"Microsoft.Maui.Graphics.dll",
 		"Syncfusion.Licensing.dll",
 		"Syncfusion.Maui.Core.dll",
+		"Syncfusion.Maui.Gauges.dll",
 		"Syncfusion.Maui.Popup.dll",
 		"Syncfusion.Maui.Sliders.dll",
 		"Xamarin.Android.Glide.dll",

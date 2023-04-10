@@ -1,14 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:drawables="clr-namespace:StudyFocusMobApp.Drawables"
              xmlns:popup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
              xmlns:sliders="clr-namespace:Syncfusion.Maui.Sliders;assembly=Syncfusion.Maui.Sliders"
-             x:Class="StudyFocusMobApp.MainPage">
+             xmlns:gauge="clr-namespace:Syncfusion.Maui.Gauges;assembly=Syncfusion.Maui.Gauges"
+             x:Class="StudyFocusMobApp.MainPage"
+             >
 
-    <ContentPage.Resources>
-        <drawables:RadialTimerDrawable x:Key="radialTimerDrawable"/>
-    </ContentPage.Resources>
     
     <StackLayout>
         <HorizontalStackLayout HorizontalOptions="Center"> 
@@ -27,17 +25,47 @@
                 <Entry x:Name="MinutesEntry"
                        Grid.Column="1"
                        Grid.Row="0"
-                       Placeholder="Enter text"
+                       Placeholder="Enter minutes"
                         />
-
-                <GraphicsView Drawable="{StaticResource radialTimerDrawable}"
-                      x:Name="RadialTimerGraphicsView"
-                      Grid.Column="0"
-                      Grid.Row="1"
-                      Grid.ColumnSpan="3"
-                      HeightRequest="400">
-                </GraphicsView>
-
+                <gauge:SfRadialGauge  Grid.Column="0"
+                                      Grid.Row="1"
+                                      Grid.ColumnSpan="3"
+                                      >  
+                    <gauge:SfRadialGauge.Axes>
+                        <gauge:RadialAxis Interval="10"
+                          StartAngle="270"
+                          EndAngle="270"
+                          ShowTicks="False"
+                          ShowLabels="False">
+                            <gauge:RadialAxis.AxisLineStyle>
+                                <gauge:RadialLineStyle Thickness="30"/>
+                            </gauge:RadialAxis.AxisLineStyle>
+                            <gauge:RadialAxis.Pointers>
+                                <gauge:RangePointer x:Name="ClockSector"
+                                                    Value="{Binding CoveredTimePercentage}"
+                                                    PointerWidth="140"
+                                                    EnableAnimation="True"
+                                                    Fill="#FFFCE38A"
+                                                    CornerStyle="BothFlat" />
+                            </gauge:RadialAxis.Pointers>
+                            
+                            <gauge:RadialAxis.Annotations>
+                                <gauge:GaugeAnnotation>
+                                    <gauge:GaugeAnnotation.Content>
+                                        <VerticalStackLayout>
+                                            <Image Source="sun.png" HeightRequest="50" WidthRequest="60" />
+                                            <Label Text="73° F"
+                                                   FontSize="22"
+                                                   TextColor="Black"
+                                                   FontAttributes="Bold" />
+                                        </VerticalStackLayout>
+                                    </gauge:GaugeAnnotation.Content>
+                                </gauge:GaugeAnnotation>
+                            </gauge:RadialAxis.Annotations>
+                        </gauge:RadialAxis>
+                    </gauge:SfRadialGauge.Axes>
+                </gauge:SfRadialGauge>
+                
                 <HorizontalStackLayout Grid.Column="0"
                                Grid.Row="3"
                                Grid.ColumnSpan="3"
@@ -75,6 +103,7 @@
                         <sliders:SfSlider Minimum="10"
                                           Maximum="60"
                                           Value="30"
+                                          StepSize="5"
                                           Interval="10"
                                           ShowTicks="True"
                                           ShowLabels="True"
