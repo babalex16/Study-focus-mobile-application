@@ -8,7 +8,16 @@ public partial class MainPage : ContentPage
 {
     private int timeInSeconds;
     private int remainingTimeInSeconds;
-    private double CoveredTimePercentage { get; set; } = 0.0;
+    private double coveredTimePercentage = 0.0;
+    public double CoveredTimePercentage
+    {
+        get { return this.coveredTimePercentage; } 
+        set 
+        { 
+            this.coveredTimePercentage = value;
+            OnPropertyChanged();
+        }
+    }
     public MainPage()
 	{
         InitializeComponent();

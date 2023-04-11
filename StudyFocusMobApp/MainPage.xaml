@@ -5,7 +5,7 @@
              xmlns:sliders="clr-namespace:Syncfusion.Maui.Sliders;assembly=Syncfusion.Maui.Sliders"
              xmlns:gauge="clr-namespace:Syncfusion.Maui.Gauges;assembly=Syncfusion.Maui.Gauges"
              x:Class="StudyFocusMobApp.MainPage"
-             >
+             x:Name="MyPage">
 
     
     <StackLayout>
@@ -13,8 +13,8 @@
             <!-- top controls -->
             <Label Text="Test"></Label>
         </HorizontalStackLayout>
-        
-        <StackLayout VerticalOptions="CenterAndExpand">
+
+        <StackLayout VerticalOptions="CenterAndExpand" BindingContext="{Binding Source={x:Reference MyPage}}">
             <!-- middle controls -->
             <Grid ColumnDefinitions="*,*,*"
                   RowDefinitions="Auto,*,Auto">
@@ -33,10 +33,10 @@
                                       >  
                     <gauge:SfRadialGauge.Axes>
                         <gauge:RadialAxis Interval="10"
-                          StartAngle="270"
-                          EndAngle="270"
-                          ShowTicks="False"
-                          ShowLabels="False">
+                                          StartAngle="270"
+                                          EndAngle="270"
+                                          ShowTicks="False"
+                                          ShowLabels="False">
                             <gauge:RadialAxis.AxisLineStyle>
                                 <gauge:RadialLineStyle Thickness="30"/>
                             </gauge:RadialAxis.AxisLineStyle>
@@ -67,22 +67,22 @@
                 </gauge:SfRadialGauge>
                 
                 <HorizontalStackLayout Grid.Column="0"
-                               Grid.Row="3"
-                               Grid.ColumnSpan="3"
-                               HorizontalOptions="Center">
+                                       Grid.Row="3"
+                                       Grid.ColumnSpan="3"
+                                       HorizontalOptions="Center">
                     <Button Text="Start"
                             Clicked="StartButton_Clicked"
-                    BackgroundColor="Red"
-                    CornerRadius="40"
-                    TextColor="White"
-                    Margin="10,10,45,10"/>
+                            BackgroundColor="Red"
+                            CornerRadius="40"
+                            TextColor="White"
+                            Margin="10,10,45,10"/>  
 
                     <Button Text="Stop"
                             Clicked="StopButton_Clicked"
-                    BackgroundColor="Blue"
-                    TextColor="White"
-                    CornerRadius="40"
-                    Margin="45,10,10,10"/>
+                            BackgroundColor="Blue"
+                            TextColor="White"
+                            CornerRadius="40"
+                            Margin="45,10,10,10"/>
 
                 </HorizontalStackLayout>
             </Grid>
