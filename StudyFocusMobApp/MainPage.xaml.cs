@@ -6,8 +6,8 @@ namespace StudyFocusMobApp;
 
 public partial class MainPage : ContentPage
 {
-    private int timeInSeconds;
-    private int remainingTimeInSeconds;
+    private int timeInSeconds = 1200;
+    private int remainingTimeInSeconds = 1200;
     private double coveredTimePercentage = 0.0;
     public double CoveredTimePercentage
     {

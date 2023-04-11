@@ -11,7 +11,6 @@
     <StackLayout>
         <HorizontalStackLayout HorizontalOptions="Center"> 
             <!-- top controls -->
-            <Label Text="Test"></Label>
         </HorizontalStackLayout>
 
         <StackLayout VerticalOptions="CenterAndExpand" BindingContext="{Binding Source={x:Reference MyPage}}">
@@ -48,20 +47,6 @@
                                                     Fill="#FFFCE38A"
                                                     CornerStyle="BothFlat" />
                             </gauge:RadialAxis.Pointers>
-                            
-                            <gauge:RadialAxis.Annotations>
-                                <gauge:GaugeAnnotation>
-                                    <gauge:GaugeAnnotation.Content>
-                                        <VerticalStackLayout>
-                                            <Image Source="sun.png" HeightRequest="50" WidthRequest="60" />
-                                            <Label Text="73° F"
-                                                   FontSize="22"
-                                                   TextColor="Black"
-                                                   FontAttributes="Bold" />
-                                        </VerticalStackLayout>
-                                    </gauge:GaugeAnnotation.Content>
-                                </gauge:GaugeAnnotation>
-                            </gauge:RadialAxis.Annotations>
                         </gauge:RadialAxis>
                     </gauge:SfRadialGauge.Axes>
                 </gauge:SfRadialGauge>
