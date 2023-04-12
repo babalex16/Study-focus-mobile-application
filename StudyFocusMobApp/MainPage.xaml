@@ -46,12 +46,10 @@
                             <gauge:RadialAxis.Annotations>
                                 <gauge:GaugeAnnotation>
                                     <gauge:GaugeAnnotation.Content>
-                                        <VerticalStackLayout>
                                             <Label x:Name="RemainingTimeLabel"
                                                    FontSize="22"
                                                    TextColor="Black"
                                                    FontAttributes="Bold" />
-                                        </VerticalStackLayout>
                                     </gauge:GaugeAnnotation.Content>
                                 </gauge:GaugeAnnotation>
                             </gauge:RadialAxis.Annotations>
