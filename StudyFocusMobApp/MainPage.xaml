@@ -5,11 +5,12 @@
              xmlns:sliders="clr-namespace:Syncfusion.Maui.Sliders;assembly=Syncfusion.Maui.Sliders"
              xmlns:gauge="clr-namespace:Syncfusion.Maui.Gauges;assembly=Syncfusion.Maui.Gauges"
              x:Class="StudyFocusMobApp.MainPage"
+             BackgroundColor="#F3EBA3"
              x:Name="MyPage">
 
-    
+
     <StackLayout>
-        <HorizontalStackLayout HorizontalOptions="Center"> 
+        <HorizontalStackLayout HorizontalOptions="Center">
             <!-- top controls -->
         </HorizontalStackLayout>
 
@@ -25,28 +26,28 @@
                 <gauge:SfRadialGauge  Grid.Column="0"
                                       Grid.Row="1"
                                       Grid.ColumnSpan="3"
-                                      >  
+                                      >
                     <gauge:SfRadialGauge.Axes>
                         <gauge:RadialAxis Interval="10"
                                           StartAngle="270"
                                           EndAngle="270"
                                           ShowTicks="False"
                                           ShowLabels="False">
-                            <gauge:RadialAxis.AxisLineStyle>
-                                <gauge:RadialLineStyle Thickness="30"/>
+                            <gauge:RadialAxis.AxisLineStyle >
+                                <gauge:RadialLineStyle Fill="#D8CC5E" Thickness="140"/>
                             </gauge:RadialAxis.AxisLineStyle>
                             <gauge:RadialAxis.Pointers>
                                 <gauge:RangePointer x:Name="ClockSector"
                                                     Value="{Binding CoveredTimePercentage}"
                                                     PointerWidth="140"
                                                     EnableAnimation="True"
-                                                    Fill="#FFFCE38A"
+                                                    Fill="#ECE08E"
                                                     CornerStyle="BothFlat" />
                             </gauge:RadialAxis.Pointers>
                             <gauge:RadialAxis.Annotations>
                                 <gauge:GaugeAnnotation>
                                     <gauge:GaugeAnnotation.Content>
-                                            <Label x:Name="RemainingTimeLabel"
+                                        <Label x:Name="RemainingTimeLabel"
                                                    FontSize="22"
                                                    TextColor="Black"
                                                    FontAttributes="Bold" />
@@ -56,7 +57,7 @@
                         </gauge:RadialAxis>
                     </gauge:SfRadialGauge.Axes>
                 </gauge:SfRadialGauge>
-                
+
                 <HorizontalStackLayout Grid.Column="0"
                                        Grid.Row="3"
                                        Grid.ColumnSpan="3"
@@ -67,7 +68,7 @@
                             BackgroundColor="Red"
                             CornerRadius="40"
                             TextColor="White"
-                            Margin="10,10,45,10"/>  
+                            Margin="10,10,45,10"/>
 
                     <Button Text="Stop"
                             Clicked="OnStopButtonClicked"
@@ -79,12 +80,15 @@
                 </HorizontalStackLayout>
             </Grid>
         </StackLayout>
-        
-        <HorizontalStackLayout Padding="20" Margin="20" Spacing="70"  HorizontalOptions="Center">
+
+        <HorizontalStackLayout Padding="20" Margin="20" Spacing="20"  HorizontalOptions="Center">
             <!-- bottom controls -->
-            <ImageButton Source="notifications_off.svg"></ImageButton>
-            <ImageButton Source="music_note.svg"></ImageButton>
-            <ImageButton Source="settings.svg"
+            <ImageButton Source="ic_notification.png"
+                         MaximumHeightRequest="70"></ImageButton>
+            <ImageButton Source="ic_note.png"
+                         MaximumHeightRequest="70"></ImageButton>
+            <ImageButton Source="ic_settings.png"
+                         MaximumHeightRequest="70"
                          Clicked="SettingsButton_Clicked" />
             <popup:SfPopup x:Name="popup" 
                            AppearanceMode="OneButton" 
@@ -99,7 +103,8 @@
                                           Interval="10"
                                           ShowTicks="True"
                                           ShowLabels="True"
-                                          MinorTicksPerInterval="1" >
+                                          MinorTicksPerInterval="1"
+                                          ValueChanged="SfSlider_ValueChanged">
                             <sliders:SfSlider.ThumbStyle>
                                 <sliders:SliderThumbStyle Fill="#D8CC5E" />
                             </sliders:SfSlider.ThumbStyle>
@@ -107,13 +112,13 @@
                                 <sliders:SliderTrackStyle ActiveFill="#ECE08E"
                                                           InactiveFill="#F3EBA3" />
                             </sliders:SfSlider.TrackStyle>
-                                
+
                         </sliders:SfSlider>
                     </DataTemplate>
                 </popup:SfPopup.ContentTemplate>
             </popup:SfPopup>
-            
-            
+
+
         </HorizontalStackLayout>
     </StackLayout>
 

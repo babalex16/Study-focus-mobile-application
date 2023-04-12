@@ -10,6 +10,7 @@ public partial class MainPage : ContentPage
     private int _timeInSeconds;
     private bool _isRunning;
     private bool _firstRun = true;
+    private bool _runFromSlider = false;
     private readonly CancellationTokenSource _cancellationTokenSource;
     private double _coveredTimePercentage = 0.0;
     public double CoveredTimePercentage
@@ -41,8 +42,17 @@ public partial class MainPage : ContentPage
             }
             else
             {
-                _ = DisplayAlert("Error", "Please enter a valid number of minutes.", "OK");
+                if (!_runFromSlider)
+                {
+                    _ = DisplayAlert("Error", "Please enter a valid number of minutes.", "OK");
+                }
+                    
             }
+        }
+        if (_runFromSlider)
+        {
+            _firstRun = false;
+            UpdateCountdownLabel();
         }
         if (!_isRunning)
         {
@@ -106,6 +116,12 @@ public partial class MainPage : ContentPage
     {
         popup.Show();
     }
-    
-}
 
+    private void SfSlider_ValueChanged(object sender, SliderValueChangedEventArgs e)
+    {
+        _runFromSlider = true;
+        int value = (int)e.NewValue;
+        _timeInSeconds = value * 60;
+        _remainingTimeInSeconds = value * 60;
+    }
+}
