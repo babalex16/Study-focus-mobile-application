@@ -6,62 +6,106 @@ namespace StudyFocusMobApp;
 
 public partial class MainPage : ContentPage
 {
-    private int timeInSeconds = 1200;
-    private int remainingTimeInSeconds = 1200;
-    private double coveredTimePercentage = 0.0;
+    private int _remainingTimeInSeconds;
+    private int _timeInSeconds;
+    private bool _isRunning;
+    private bool _firstRun = true;
+    private readonly CancellationTokenSource _cancellationTokenSource;
+    private double _coveredTimePercentage = 0.0;
     public double CoveredTimePercentage
     {
-        get { return this.coveredTimePercentage; } 
-        set 
-        { 
-            this.coveredTimePercentage = value;
+        get { return _coveredTimePercentage; }
+        set
+        {
+            _coveredTimePercentage = value;
             OnPropertyChanged();
         }
     }
+
     public MainPage()
-	{
+    {
         InitializeComponent();
         BindingContext = this;
     }
 
-    private void StartButton_Clicked(object sender, EventArgs e)
+    private async void OnPlayPauseButtonClicked(object sender, EventArgs e)
     {
-        if (int.TryParse(MinutesEntry.Text, out int minutes))
+        if (_firstRun)
         {
-            timeInSeconds = minutes * 60;
-            remainingTimeInSeconds = minutes * 60;
-            CountDown();
+            if (int.TryParse(MinutesEntry.Text, out int minutes))
+            {
+                _timeInSeconds = minutes * 60;
+                _remainingTimeInSeconds = minutes * 60;
+                _firstRun = false;
+                UpdateCountdownLabel();
+            }
+            else
+            {
+                _ = DisplayAlert("Error", "Please enter a valid number of minutes.", "OK");
+            }
+        }
+        if (!_isRunning)
+        {
+            _isRunning = true;
+            UpdatePlayPauseButtonText();
+            while (_remainingTimeInSeconds > 0 && _isRunning)
+            {
+                UpdateCountdownLabel();
+                await Task.Delay(1000);
+
+                if (!_isRunning)
+                {
+                    break;
+                }
+                CalculatePercentage();
+                _remainingTimeInSeconds--;
+            }
+
+            if (_remainingTimeInSeconds <= 0)
+            {
+                _cancellationTokenSource?.Cancel();
+            }
+
+            _isRunning = false;
+            UpdatePlayPauseButtonText();
         }
         else
         {
-            DisplayAlert("Error", "Please enter a valid number of minutes.", "OK");
+            _isRunning = false;
+            _cancellationTokenSource?.Cancel();
+            UpdatePlayPauseButtonText();
         }
-    }
-    private async void CountDown()
-    {
-        while (remainingTimeInSeconds > 0)
-        {
-            //RemainingTimeLabel.Text = TimeSpan.FromSeconds(remainingTimeInSeconds).ToString(@"mm\:ss");
-            RemainingTimeLabel.Text = CoveredTimePercentage.ToString();
-            await Task.Delay(1000);
-            remainingTimeInSeconds--;
-            CalculatePercentage();
-        }
-        RemainingTimeLabel.Text = "00:00";
     }
 
-    private void StopButton_Clicked(object sender, EventArgs e)
+    private void OnStopButtonClicked(object sender, EventArgs e)
     {
-        remainingTimeInSeconds = 0;
+        _cancellationTokenSource?.Cancel();
+        _remainingTimeInSeconds = _timeInSeconds;
+        CalculatePercentage();
+        UpdateCountdownLabel();
+        _isRunning = false;
+        _firstRun = true;
+        UpdatePlayPauseButtonText();
+    }
+
+    private void UpdateCountdownLabel()
+    {
+        RemainingTimeLabel.Text = TimeSpan.FromSeconds(_remainingTimeInSeconds).ToString(@"mm\:ss");
+    }
+
+    private void UpdatePlayPauseButtonText()
+    {
+        PlayPauseButton.Text = _isRunning ? "Pause" : "Play";
+    }
+    private void CalculatePercentage()
+    {
+        CoveredTimePercentage = Math.Round(100 - ((double)_remainingTimeInSeconds / (double)_timeInSeconds) * 100, 2);
     }
 
     private void SettingsButton_Clicked(object sender, EventArgs e)
     {
         popup.Show();
     }
-    private void CalculatePercentage() 
-    {
-        CoveredTimePercentage = Math.Round(100 - ((double)remainingTimeInSeconds / (double)timeInSeconds)*100, 2);
-    }
+    
 }
 

@@ -17,10 +17,6 @@
             <!-- middle controls -->
             <Grid ColumnDefinitions="*,*,*"
                   RowDefinitions="Auto,*,Auto">
-                <Label  x:Name="RemainingTimeLabel"
-                        Grid.Column="1"
-                        Grid.Row="0"
-                        Text="Current time is: "/>
                 <Entry x:Name="MinutesEntry"
                        Grid.Column="1"
                        Grid.Row="0"
@@ -47,6 +43,18 @@
                                                     Fill="#FFFCE38A"
                                                     CornerStyle="BothFlat" />
                             </gauge:RadialAxis.Pointers>
+                            <gauge:RadialAxis.Annotations>
+                                <gauge:GaugeAnnotation>
+                                    <gauge:GaugeAnnotation.Content>
+                                        <VerticalStackLayout>
+                                            <Label x:Name="RemainingTimeLabel"
+                                                   FontSize="22"
+                                                   TextColor="Black"
+                                                   FontAttributes="Bold" />
+                                        </VerticalStackLayout>
+                                    </gauge:GaugeAnnotation.Content>
+                                </gauge:GaugeAnnotation>
+                            </gauge:RadialAxis.Annotations>
                         </gauge:RadialAxis>
                     </gauge:SfRadialGauge.Axes>
                 </gauge:SfRadialGauge>
@@ -55,15 +63,16 @@
                                        Grid.Row="3"
                                        Grid.ColumnSpan="3"
                                        HorizontalOptions="Center">
-                    <Button Text="Start"
-                            Clicked="StartButton_Clicked"
+                    <Button x:Name="PlayPauseButton"
+                            Text="Start"
+                            Clicked="OnPlayPauseButtonClicked"
                             BackgroundColor="Red"
                             CornerRadius="40"
                             TextColor="White"
                             Margin="10,10,45,10"/>  
 
                     <Button Text="Stop"
-                            Clicked="StopButton_Clicked"
+                            Clicked="OnStopButtonClicked"
                             BackgroundColor="Blue"
                             TextColor="White"
                             CornerRadius="40"
