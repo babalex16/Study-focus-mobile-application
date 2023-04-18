@@ -1,4 +1,5 @@
-﻿using Syncfusion.Maui.Core.Hosting;
+﻿using Plugin.Maui.Audio;
+using Syncfusion.Maui.Core.Hosting;
 
 namespace StudyFocusMobApp;
 
@@ -15,6 +16,9 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
         builder.ConfigureSyncfusionCore();
+		builder.Services.AddSingleton(AudioManager.Current);
+        builder.Services.AddTransient<MainPage>();	
+
         return builder.Build();
 	}
 }

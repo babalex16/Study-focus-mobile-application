@@ -195,6 +195,19 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
@@ -2204,6 +2217,19 @@
         "runtime": {
           "lib/net6.0-android30.0/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
+          }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -4219,6 +4245,19 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
@@ -6228,6 +6267,19 @@
         "runtime": {
           "lib/net6.0-android30.0/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
+          }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -8243,6 +8295,19 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
@@ -10252,6 +10317,19 @@
         "runtime": {
           "lib/net6.0-android30.0/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
+          }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -12267,6 +12345,19 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
@@ -14279,6 +14370,19 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
@@ -16269,6 +16373,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
@@ -16551,6 +16667,18 @@
           "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
         }
       },
       "Syncfusion.Maui.Core/21.1.38": {
@@ -16837,6 +16965,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
@@ -17119,6 +17259,18 @@
           "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
         }
       },
       "Syncfusion.Maui.Core/21.1.38": {
@@ -17405,6 +17557,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
@@ -17687,6 +17851,18 @@
           "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
         }
       },
       "Syncfusion.Maui.Core/21.1.38": {
@@ -17973,6 +18149,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
@@ -18255,6 +18443,18 @@
           "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
         }
       },
       "Syncfusion.Maui.Core/21.1.38": {
@@ -18541,6 +18741,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
@@ -18823,6 +19035,18 @@
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
         }
       },
       "Syncfusion.Maui.Core/21.1.38": {
@@ -19109,6 +19333,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
@@ -19391,6 +19627,18 @@
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
         }
       },
       "Syncfusion.Maui.Core/21.1.38": {
@@ -19677,6 +19925,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
@@ -19959,6 +20219,18 @@
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
         }
       },
       "Syncfusion.Maui.Core/21.1.38": {
@@ -20245,6 +20517,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
@@ -20527,6 +20811,18 @@
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
         }
       },
       "Syncfusion.Maui.Core/21.1.38": {
@@ -20946,6 +21242,15 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
@@ -21325,6 +21630,15 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
         }
       },
       "Syncfusion.Maui.Core/21.1.38": {
@@ -21708,6 +22022,15 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
@@ -22087,6 +22410,15 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
         }
       },
       "Syncfusion.Maui.Core/21.1.38": {
@@ -22470,6 +22802,15 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
@@ -22851,6 +23192,15 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "Syncfusion.Maui.Core/21.1.38": {
         "type": "package",
         "compile": {
@@ -23230,6 +23580,15 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
         }
       },
       "Syncfusion.Maui.Core/21.1.38": {
@@ -23617,6 +23976,15 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
         }
       },
       "Syncfusion.Maui.Core/21.1.38": {
@@ -24799,6 +25167,24 @@
         "tools/net5.0/zh-TW/Microsoft.Build.Msix.resources.dll",
         "tools/x64/GenXbf.dll",
         "tools/x86/GenXbf.dll"
+      ]
+    },
+    "Plugin.Maui.Audio/1.0.0": {
+      "sha512": "WBlOOWSMZ4C6c4QBx4WSv+ytIHzXezmazvj7H2D/M6gB9+dpVe87RH5l8fX00iWOhI4UI0WuG0pBuAEUfyDV9Q==",
+      "type": "package",
+      "path": "plugin.maui.audio/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net6.0-android31.0/Plugin.Maui.Audio.dll",
+        "lib/net6.0-android31.0/Plugin.Maui.Audio.xml",
+        "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll",
+        "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll",
+        "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll",
+        "lib/net6.0/Plugin.Maui.Audio.dll",
+        "plugin.maui.audio.1.0.0.nupkg.sha512",
+        "plugin.maui.audio.nuspec"
       ]
     },
     "Syncfusion.Maui.Core/21.1.38": {
@@ -26903,6 +27289,7 @@
     "net6.0-android31.0": [
       "Microsoft.Maui.Dependencies >= 6.0.552",
       "Microsoft.Maui.Extensions >= 6.0.552",
+      "Plugin.Maui.Audio >= 1.0.0",
       "Syncfusion.Maui.Gauges >= 21.1.38",
       "Syncfusion.Maui.Popup >= 21.1.38",
       "Syncfusion.Maui.Sliders >= 21.1.38"
@@ -26910,6 +27297,7 @@
     "net6.0-ios16.1": [
       "Microsoft.Maui.Dependencies >= 6.0.552",
       "Microsoft.Maui.Extensions >= 6.0.552",
+      "Plugin.Maui.Audio >= 1.0.0",
       "Syncfusion.Maui.Gauges >= 21.1.38",
       "Syncfusion.Maui.Popup >= 21.1.38",
       "Syncfusion.Maui.Sliders >= 21.1.38",
@@ -26918,6 +27306,7 @@
     "net6.0-maccatalyst16.1": [
       "Microsoft.Maui.Dependencies >= 6.0.552",
       "Microsoft.Maui.Extensions >= 6.0.552",
+      "Plugin.Maui.Audio >= 1.0.0",
       "Syncfusion.Maui.Gauges >= 21.1.38",
       "Syncfusion.Maui.Popup >= 21.1.38",
       "Syncfusion.Maui.Sliders >= 21.1.38",
@@ -26927,6 +27316,7 @@
       "Microsoft.Maui.Dependencies >= 6.0.552",
       "Microsoft.Maui.Extensions >= 6.0.552",
       "Microsoft.Windows.SDK.BuildTools >= 10.0.22000.194",
+      "Plugin.Maui.Audio >= 1.0.0",
       "Syncfusion.Maui.Gauges >= 21.1.38",
       "Syncfusion.Maui.Popup >= 21.1.38",
       "Syncfusion.Maui.Sliders >= 21.1.38"
@@ -27002,6 +27392,10 @@
             "target": "Package",
             "version": "[6.0.552, )",
             "autoReferenced": true
+          },
+          "Plugin.Maui.Audio": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           },
           "Syncfusion.Maui.Gauges": {
             "target": "Package",
@@ -27117,6 +27511,10 @@
             "version": "[6.0.552, )",
             "autoReferenced": true
           },
+          "Plugin.Maui.Audio": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "Syncfusion.Maui.Gauges": {
             "target": "Package",
             "version": "[21.1.38, )"
@@ -27211,6 +27609,10 @@
             "target": "Package",
             "version": "[6.0.552, )",
             "autoReferenced": true
+          },
+          "Plugin.Maui.Audio": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           },
           "Syncfusion.Maui.Gauges": {
             "target": "Package",
@@ -27313,6 +27715,10 @@
             "target": "Package",
             "version": "[10.0.22000.194, )",
             "autoReferenced": true
+          },
+          "Plugin.Maui.Audio": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           },
           "Syncfusion.Maui.Gauges": {
             "target": "Package",
