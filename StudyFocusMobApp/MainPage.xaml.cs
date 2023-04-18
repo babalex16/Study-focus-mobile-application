@@ -6,8 +6,10 @@ namespace StudyFocusMobApp;
 
 public partial class MainPage : ContentPage
 {
-    private int _remainingTimeInSeconds;
-    private int _timeInSeconds;
+    private int _remainingWorkingTimeInSeconds;
+    private int _workingTimeInSeconds;
+    private int _remainingRestTimeInSeconds;
+    private int _restTimeInSeconds;
     private bool _isRunning;
     private bool _firstRun = true;
     private bool _runFromSlider = false;
@@ -35,8 +37,8 @@ public partial class MainPage : ContentPage
         {
             if (int.TryParse(MinutesEntry.Text, out int minutes))
             {
-                _timeInSeconds = minutes * 60;
-                _remainingTimeInSeconds = minutes * 60;
+                _workingTimeInSeconds = minutes * 60;
+                _remainingWorkingTimeInSeconds = minutes * 60;
                 _firstRun = false;
                 UpdateCountdownLabel();
             }
@@ -58,7 +60,7 @@ public partial class MainPage : ContentPage
         {
             _isRunning = true;
             UpdatePlayPauseButtonSource();
-            while (_remainingTimeInSeconds >= 0 && _isRunning)
+            while (_remainingWorkingTimeInSeconds >= 0 && _isRunning)
             {
                 UpdateCountdownLabel();
                 await Task.Delay(1000);
@@ -68,10 +70,10 @@ public partial class MainPage : ContentPage
                     break;
                 }
                 CalculatePercentage();
-                _remainingTimeInSeconds--;
+                _remainingWorkingTimeInSeconds--;
             }
 
-            if (_remainingTimeInSeconds <= 0)
+            if (_remainingWorkingTimeInSeconds <= 0)
             {
                 _cancellationTokenSource?.Cancel();
             }
@@ -90,7 +92,7 @@ public partial class MainPage : ContentPage
     private void OnStopButtonClicked(object sender, EventArgs e)
     {
         _cancellationTokenSource?.Cancel();
-        _remainingTimeInSeconds = _timeInSeconds;
+        _remainingWorkingTimeInSeconds = _workingTimeInSeconds;
         CalculatePercentage();
         UpdateCountdownLabel();
         _isRunning = false;
@@ -100,7 +102,7 @@ public partial class MainPage : ContentPage
 
     private void UpdateCountdownLabel()
     {
-        RemainingTimeLabel.Text = TimeSpan.FromSeconds(_remainingTimeInSeconds).ToString(@"mm\:ss");
+        RemainingTimeLabel.Text = TimeSpan.FromSeconds(_remainingWorkingTimeInSeconds).ToString(@"mm\:ss");
     }
 
     private void UpdatePlayPauseButtonSource()
@@ -109,7 +111,7 @@ public partial class MainPage : ContentPage
     }
     private void CalculatePercentage()
     {
-        CoveredTimePercentage = Math.Round(100 - ((double)_remainingTimeInSeconds / (double)_timeInSeconds) * 100, 2);
+        CoveredTimePercentage = Math.Round(100 - ((double)_remainingWorkingTimeInSeconds / (double)_workingTimeInSeconds) * 100, 2);
     }
 
     private void SettingsButton_Clicked(object sender, EventArgs e)
@@ -121,7 +123,7 @@ public partial class MainPage : ContentPage
     {
         _runFromSlider = true;
         int value = (int)e.NewValue;
-        _timeInSeconds = value * 60;
-        _remainingTimeInSeconds = value * 60;
+        _workingTimeInSeconds = value * 60;
+        _remainingWorkingTimeInSeconds = value * 60;
     }
 }
