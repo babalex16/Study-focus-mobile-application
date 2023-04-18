@@ -10,7 +10,9 @@ public partial class MainPage : ContentPage
     private int _workingTimeInSeconds;
     private int _remainingRestTimeInSeconds;
     private int _restTimeInSeconds;
-    private bool _isRunning;
+    private int _cycleNumber;
+    private bool _isRunning = false;
+    private bool _isWorkingCycle = true;
     private bool _firstRun = true;
     private bool _runFromSlider = false;
     private readonly CancellationTokenSource _cancellationTokenSource;
@@ -114,16 +116,33 @@ public partial class MainPage : ContentPage
         CoveredTimePercentage = Math.Round(100 - ((double)_remainingWorkingTimeInSeconds / (double)_workingTimeInSeconds) * 100, 2);
     }
 
-    private void SettingsButton_Clicked(object sender, EventArgs e)
+    private async void SettingsButton_Clicked(object sender, EventArgs e)
     {
-        popup.Show();
+        if (_isRunning)
+        {
+            await DisplayAlert("Alert!", "Stop your current timer first", "OK");
+        }
+        else
+        {
+            settingsPopup.Show();
+        }
     }
 
-    private void SfSlider_ValueChanged(object sender, SliderValueChangedEventArgs e)
+    private void workMinuteSlider_ValueChanged(object sender, SliderValueChangedEventArgs e)
     {
         _runFromSlider = true;
         int value = (int)e.NewValue;
         _workingTimeInSeconds = value * 60;
         _remainingWorkingTimeInSeconds = value * 60;
+    }
+
+    private void restMinuteSlider_ValueChanged(object sender, SliderValueChangedEventArgs e)
+    {
+
+    }
+
+    private void cycleSlider_ValueChanged(object sender, SliderValueChangedEventArgs e)
+    {
+
     }
 }

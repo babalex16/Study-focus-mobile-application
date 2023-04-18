@@ -88,30 +88,76 @@
             <ImageButton Source="ic_settings.png"
                          MaximumHeightRequest="70"
                          Clicked="SettingsButton_Clicked" />
-            <popup:SfPopup x:Name="popup" 
+            <popup:SfPopup x:Name="settingsPopup" 
+                           AutoSizeMode="Height"
                            AppearanceMode="OneButton" 
                            ShowFooter="True"
-                           HeaderTitle="Pick a time">
+                           HeaderTitle="Customize your timer"
+                           >
                 <popup:SfPopup.ContentTemplate>
                     <DataTemplate>
-                        <sliders:SfSlider Minimum="10"
-                                          Maximum="60"
-                                          Value="30"
-                                          StepSize="5"
-                                          Interval="10"
-                                          ShowTicks="True"
-                                          ShowLabels="True"
-                                          MinorTicksPerInterval="1"
-                                          ValueChanged="SfSlider_ValueChanged">
-                            <sliders:SfSlider.ThumbStyle>
-                                <sliders:SliderThumbStyle Fill="#D8CC5E" />
-                            </sliders:SfSlider.ThumbStyle>
-                            <sliders:SfSlider.TrackStyle>
-                                <sliders:SliderTrackStyle ActiveFill="#ECE08E"
-                                                          InactiveFill="#F3EBA3" />
-                            </sliders:SfSlider.TrackStyle>
-
-                        </sliders:SfSlider>
+                        <VerticalStackLayout >
+                            <!-- Working minutes slider-->
+                            <Label Text="Working minutes:"/>
+                            <sliders:SfSlider x:Name="workMinuteSlider"
+                                              Minimum="10"
+                                              Maximum="60"
+                                              Value="30"
+                                              StepSize="5"
+                                              Interval="10"
+                                              ShowTicks="True"
+                                              ShowLabels="True"
+                                              MinorTicksPerInterval="1"
+                                              ValueChanged="workMinuteSlider_ValueChanged">
+                                <sliders:SfSlider.ThumbStyle>
+                                    <sliders:SliderThumbStyle Fill="#D8CC5E" />
+                                </sliders:SfSlider.ThumbStyle>
+                                <sliders:SfSlider.TrackStyle>
+                                    <sliders:SliderTrackStyle ActiveFill="#ECE08E"
+                                                              InactiveFill="#F3EBA3" />
+                                </sliders:SfSlider.TrackStyle>
+                            </sliders:SfSlider>
+                            <!-- Rest minutes slider -->
+                            <Label Text="Rest minutes:"/>
+                            <sliders:SfSlider x:Name="restMinuteSlider"
+                                              Minimum="5"
+                                              Maximum="30"
+                                              Value="10"
+                                              StepSize="1"
+                                              Interval="5"
+                                              ShowTicks="True"
+                                              ShowLabels="True"
+                                              MinorTicksPerInterval="1"
+                                              ValueChanged="restMinuteSlider_ValueChanged">
+                                <sliders:SfSlider.ThumbStyle>
+                                    <sliders:SliderThumbStyle Fill="#D8CC5E" />
+                                </sliders:SfSlider.ThumbStyle>
+                                <sliders:SfSlider.TrackStyle>
+                                    <sliders:SliderTrackStyle ActiveFill="#ECE08E"
+                                                              InactiveFill="#F3EBA3" />
+                                </sliders:SfSlider.TrackStyle>
+                            </sliders:SfSlider>
+                            <!-- Number of cycles -->
+                            <Label Text="Number of cylces:"/>
+                            <sliders:SfSlider x:Name="cycleSlider"
+                                              Minimum="1"
+                                              Maximum="5"
+                                              Value="3"
+                                              StepSize="1"
+                                              Interval="1"
+                                              ShowTicks="True"
+                                              ShowLabels="True"
+                                              ValueChanged="cycleSlider_ValueChanged">
+                                <sliders:SfSlider.ThumbStyle>
+                                    <sliders:SliderThumbStyle Fill="#D8CC5E" />
+                                </sliders:SfSlider.ThumbStyle>
+                                <sliders:SfSlider.TrackStyle>
+                                    <sliders:SliderTrackStyle ActiveFill="#ECE08E"
+                                                              InactiveFill="#F3EBA3" />
+                                </sliders:SfSlider.TrackStyle>
+                            </sliders:SfSlider>
+                        </VerticalStackLayout>
+                        
                     </DataTemplate>
                 </popup:SfPopup.ContentTemplate>
             </popup:SfPopup>
