@@ -8,7 +8,6 @@
              BackgroundColor="#F3EBA3"
              x:Name="MyPage">
 
-
     <StackLayout>
         <HorizontalStackLayout HorizontalOptions="Center">
             <!-- top controls -->
@@ -34,14 +33,16 @@
                                           ShowTicks="False"
                                           ShowLabels="False">
                             <gauge:RadialAxis.AxisLineStyle >
-                                <gauge:RadialLineStyle Fill="#D8CC5E" Thickness="140"/>
+                                <!-- circle cover ( diminihing part) -->
+                                <gauge:RadialLineStyle Thickness="140" Fill="#EDE17B"/>
                             </gauge:RadialAxis.AxisLineStyle>
                             <gauge:RadialAxis.Pointers>
+                                <!-- circle background ( increasing part ) -->
                                 <gauge:RangePointer x:Name="ClockSector"
                                                     Value="{Binding CoveredTimePercentage}"
                                                     PointerWidth="140"
                                                     EnableAnimation="True"
-                                                    Fill="#ECE08E"
+                                                    Fill="#F2E692"
                                                     CornerStyle="BothFlat" />
                             </gauge:RadialAxis.Pointers>
                             <gauge:RadialAxis.Annotations>
@@ -62,20 +63,17 @@
                                        Grid.Row="3"
                                        Grid.ColumnSpan="3"
                                        HorizontalOptions="Center">
-                    <Button x:Name="PlayPauseButton"
-                            Text="Start"
-                            Clicked="OnPlayPauseButtonClicked"
-                            BackgroundColor="Red"
-                            CornerRadius="40"
-                            TextColor="White"
-                            Margin="10,10,45,10"/>
+                    <ImageButton x:Name="PlayPauseButton"
+                                 Source="ic_play.png"
+                                 Clicked="OnPlayPauseButtonClicked"
+                                 MaximumHeightRequest="60"
+                                 Margin="10"/>
 
-                    <Button Text="Stop"
-                            Clicked="OnStopButtonClicked"
-                            BackgroundColor="Blue"
-                            TextColor="White"
-                            CornerRadius="40"
-                            Margin="45,10,10,10"/>
+                    <ImageButton Source="ic_stop" 
+                                 Clicked="OnStopButtonClicked"
+                                 CornerRadius="40"
+                                 MaximumHeightRequest="60"
+                                 Margin="10"/>
 
                 </HorizontalStackLayout>
             </Grid>

@@ -57,8 +57,8 @@ public partial class MainPage : ContentPage
         if (!_isRunning)
         {
             _isRunning = true;
-            UpdatePlayPauseButtonText();
-            while (_remainingTimeInSeconds > 0 && _isRunning)
+            UpdatePlayPauseButtonSource();
+            while (_remainingTimeInSeconds >= 0 && _isRunning)
             {
                 UpdateCountdownLabel();
                 await Task.Delay(1000);
@@ -77,13 +77,13 @@ public partial class MainPage : ContentPage
             }
 
             _isRunning = false;
-            UpdatePlayPauseButtonText();
+            UpdatePlayPauseButtonSource();
         }
         else
         {
             _isRunning = false;
             _cancellationTokenSource?.Cancel();
-            UpdatePlayPauseButtonText();
+            UpdatePlayPauseButtonSource();
         }
     }
 
@@ -95,7 +95,7 @@ public partial class MainPage : ContentPage
         UpdateCountdownLabel();
         _isRunning = false;
         _firstRun = true;
-        UpdatePlayPauseButtonText();
+        UpdatePlayPauseButtonSource();
     }
 
     private void UpdateCountdownLabel()
@@ -103,9 +103,9 @@ public partial class MainPage : ContentPage
         RemainingTimeLabel.Text = TimeSpan.FromSeconds(_remainingTimeInSeconds).ToString(@"mm\:ss");
     }
 
-    private void UpdatePlayPauseButtonText()
+    private void UpdatePlayPauseButtonSource()
     {
-        PlayPauseButton.Text = _isRunning ? "Pause" : "Play";
+        PlayPauseButton.Source = _isRunning ? "ic_pause.png" : "ic_play.png";
     }
     private void CalculatePercentage()
     {

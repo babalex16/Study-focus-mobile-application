@@ -165,7 +165,6 @@ D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-a
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\Mono.Android.Export.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\Mono.Android.Export.pdb
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\Mono.Android.pdb
-D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\mscorlib.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\netstandard.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\StudyFocusMobApp.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\StudyFocusMobApp.pdb
@@ -176,7 +175,6 @@ D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-a
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\Syncfusion.Maui.Sliders.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.AppContext.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Buffers.dll
-D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Collections.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Collections.Immutable.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Collections.NonGeneric.dll
@@ -192,7 +190,6 @@ D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-a
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Core.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Data.Common.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Data.DataSetExtensions.dll
-D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Data.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Contracts.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Debug.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Diagnostics.DiagnosticSource.dll
@@ -203,7 +200,6 @@ D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-a
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Tools.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Diagnostics.TraceSource.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Tracing.dll
-D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Drawing.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Drawing.Primitives.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Dynamic.Runtime.dll
@@ -253,9 +249,7 @@ D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-a
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Numerics.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Numerics.Vectors.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.ObjectModel.dll
-D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Private.DataContractSerialization.dll
-D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Private.Xml.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Private.Xml.Linq.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Reflection.DispatchProxy.dll
@@ -322,7 +316,6 @@ D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-a
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Web.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Web.HttpUtility.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Windows.dll
-D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Xml.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Xml.Linq.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Xml.ReaderWriter.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Xml.Serialization.dll
@@ -998,3 +991,11 @@ D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-a
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\resizetizer\r\drawable\ic_pause.png
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\resizetizer\r\drawable\ic_play.png
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\resizetizer\r\drawable\ic_stop.png
+D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\resizetizer\r\drawable\ic_launcher.png
+D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\mscorlib.dll
+D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
+D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Data.dll
+D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.dll
+D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
+D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
+D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Xml.dll
