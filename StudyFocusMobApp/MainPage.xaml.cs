@@ -7,18 +7,22 @@ namespace StudyFocusMobApp;
 
 public partial class MainPage : ContentPage
 {
+    private readonly CancellationTokenSource _cancellationTokenSource;
+    private IAudioManager audioManager;
     private int _remainingWorkingTimeInSeconds;//used for both rest time and work time
     private int _workingTimeInSeconds; 
+    private bool _isRunning = false;
+    private bool _isWorkingCycle = true;
+   
     private int _restTimeInSeconds;
     private int _cycleNumber = 3;
     private int _currentCycleNumber;
-    private bool _isRunning = false;
-    private bool _isWorkingCycle = true;
     private bool _firstRun = true;
     private bool _runFromSlider = false;
-    private readonly CancellationTokenSource _cancellationTokenSource;
-    private readonly IAudioManager audioManager;
+
     private double _coveredTimePercentage = 0.0;
+   
+
     public double CoveredTimePercentage
     {
         get { return _coveredTimePercentage; }
@@ -28,13 +32,13 @@ public partial class MainPage : ContentPage
             OnPropertyChanged();
         }
     }
-
     public MainPage(IAudioManager audioManager)
     {
         InitializeComponent();
         BindingContext = this;
         this.audioManager = audioManager;
     }
+
 
     private async void OnPlayPauseButtonClicked(object sender, EventArgs e)
     {
@@ -95,14 +99,6 @@ public partial class MainPage : ContentPage
         }
     }
 
-    private async void PlayAudioSound()
-    {
-        var player = audioManager.CreatePlayer(await FileSystem.OpenAppPackageFileAsync("cycleFinishSound.mp3"));
-        player.Play();  
-
-        player.Dispose();   
-    }
-
     private void OnStopButtonClicked(object sender, EventArgs e)
     {
         _cancellationTokenSource?.Cancel();
@@ -114,6 +110,14 @@ public partial class MainPage : ContentPage
         UpdatePlayPauseButtonSource();
     }
 
+    private async void PlayAudioSound()
+    {
+        var player = audioManager.CreatePlayer(await FileSystem.OpenAppPackageFileAsync("cycleFinishSound.mp3"));
+        player.Play();
+
+        player.Dispose();
+    }
+
     private void UpdateCountdownLabel()
     {
         RemainingTimeLabel.Text = TimeSpan.FromSeconds(_remainingWorkingTimeInSeconds).ToString(@"mm\:ss");
@@ -122,7 +126,6 @@ public partial class MainPage : ContentPage
     private void UpdatePlayPauseButtonSource()
     {
         PlayPauseButton.Source = _isRunning ? "ic_pause.png" : "ic_play.png";
-        PlayAudioSound();
     }
     private void CalculatePercentage()
     {
