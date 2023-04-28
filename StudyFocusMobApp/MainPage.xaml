@@ -17,10 +17,11 @@
             <!-- middle controls -->
             <Grid ColumnDefinitions="*,*,*"
                   RowDefinitions="Auto,*,Auto">
-                <Entry x:Name="MinutesEntry"
+                <Label x:Name="CycleLabel"
                        Grid.Column="1"
                        Grid.Row="0"
-                       Placeholder="Enter minutes"
+                       Text="Cycle#"
+                       HorizontalTextAlignment="Center"
                         />
                 <gauge:SfRadialGauge  Grid.Column="0"
                                       Grid.Row="1"
@@ -93,6 +94,7 @@
                            AppearanceMode="OneButton" 
                            ShowFooter="True"
                            HeaderTitle="Customize your timer"
+                           Closed="settingsPopup_Closed"
                            >
                 <popup:SfPopup.ContentTemplate>
                     <DataTemplate>
@@ -108,7 +110,8 @@
                                               ShowTicks="True"
                                               ShowLabels="True"
                                               MinorTicksPerInterval="1"
-                                              ValueChanged="workMinuteSlider_ValueChanged">
+                                              ValueChanged="workMinuteSlider_ValueChanged"
+                                              >
                                 <sliders:SfSlider.ThumbStyle>
                                     <sliders:SliderThumbStyle Fill="#D8CC5E" />
                                 </sliders:SfSlider.ThumbStyle>
