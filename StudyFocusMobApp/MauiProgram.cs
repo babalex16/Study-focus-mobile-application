@@ -14,7 +14,9 @@ public static class MauiProgram
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			});
+				fonts.AddFont("Lobster-Regular.ttf", "Lobster-Regular");
+
+            });
         builder.ConfigureSyncfusionCore();
 		builder.Services.AddSingleton(AudioManager.Current);
         builder.Services.AddTransient<MainPage>();	

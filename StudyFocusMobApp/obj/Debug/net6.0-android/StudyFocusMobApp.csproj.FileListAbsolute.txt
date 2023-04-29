@@ -971,12 +971,13 @@ D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-a
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\lp\152\jl\files.cache
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\lp\154\jl\files.cache
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\lp\160\jl\files.cache
-D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\mscorlib.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\Plugin.Maui.Audio.dll
+D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\src\crc64467b05f37239e7a6\StreamMediaDataSource.java
+D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\resizetizer\f\Lobster-Regular.ttf
+D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\mscorlib.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Data.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\System.Xml.dll
-D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\src\crc64467b05f37239e7a6\StreamMediaDataSource.java

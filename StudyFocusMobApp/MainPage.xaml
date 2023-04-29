@@ -20,7 +20,10 @@
                 <Label x:Name="CycleLabel"
                        Grid.Column="1"
                        Grid.Row="0"
-                       Text="Cycle#"
+                       Text=" "
+                       TextColor="#B3631F"
+                       FontFamily="Lobster-Regular"
+                       FontSize="16"
                        HorizontalTextAlignment="Center"
                         />
                 <gauge:SfRadialGauge  Grid.Column="0"
@@ -51,7 +54,8 @@
                                     <gauge:GaugeAnnotation.Content>
                                         <Label x:Name="RemainingTimeLabel"
                                                    FontSize="22"
-                                                   TextColor="Black"
+                                                   FontFamily="Lobster-Regular"
+                                                   TextColor="#B3631F"
                                                    FontAttributes="Bold" />
                                     </gauge:GaugeAnnotation.Content>
                                 </gauge:GaugeAnnotation>
