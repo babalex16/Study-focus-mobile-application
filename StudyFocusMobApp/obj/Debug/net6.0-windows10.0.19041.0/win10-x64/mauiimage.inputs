@@ -4,4 +4,4 @@ File=Resources\Images\ic_pause.png;Link=;BaseSize=;Resize=;TintColor=;Color=;IsA
 File=Resources\Images\ic_play.png;Link=;BaseSize=;Resize=;TintColor=;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
 File=Resources\Images\ic_settings.png;Link=;BaseSize=;Resize=;TintColor=;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
 File=Resources\Images\ic_stop.png;Link=;BaseSize=;Resize=;TintColor=;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
-File=Resources\AppIcon\appicon.svg;Link=;BaseSize=;Resize=;TintColor=;Color=#512BD4;IsAppIcon=True;ForegroundScale=;ForegroundFile=Resources\AppIcon\appiconfg.svg
+File=Resources\AppIcon\icon.png;Link=;BaseSize=;Resize=;TintColor=;Color=#F3EBA3;IsAppIcon=True;ForegroundScale=;ForegroundFile=

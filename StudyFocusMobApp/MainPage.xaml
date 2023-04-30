@@ -23,7 +23,7 @@
                        Text=" "
                        TextColor="#B3631F"
                        FontFamily="Lobster-Regular"
-                       FontSize="16"
+                       FontSize="20"
                        HorizontalTextAlignment="Center"
                         />
                 <gauge:SfRadialGauge  Grid.Column="0"
@@ -53,10 +53,12 @@
                                 <gauge:GaugeAnnotation>
                                     <gauge:GaugeAnnotation.Content>
                                         <Label x:Name="RemainingTimeLabel"
-                                                   FontSize="22"
-                                                   FontFamily="Lobster-Regular"
-                                                   TextColor="#B3631F"
-                                                   FontAttributes="Bold" />
+                                               WidthRequest="60"    
+                                               FontSize="24"
+                                               FontFamily="Lobster-Regular"
+                                               Margin="4"
+                                               TextColor="#B3631F"
+                                               FontAttributes="Bold" />
                                     </gauge:GaugeAnnotation.Content>
                                 </gauge:GaugeAnnotation>
                             </gauge:RadialAxis.Annotations>
@@ -104,7 +106,7 @@
                     <DataTemplate>
                         <VerticalStackLayout >
                             <!-- Working minutes slider-->
-                            <Label Text="Working minutes:"/>
+                            <Label Text="Working minutes:" TextColor="Black"/>
                             <sliders:SfSlider x:Name="workMinuteSlider"
                                               Minimum="10"
                                               Maximum="60"
@@ -125,7 +127,7 @@
                                 </sliders:SfSlider.TrackStyle>
                             </sliders:SfSlider>
                             <!-- Rest minutes slider -->
-                            <Label Text="Rest minutes:"/>
+                            <Label Text="Rest minutes:" Margin="0,15,0,0" TextColor="Black"/>
                             <sliders:SfSlider x:Name="restMinuteSlider"
                                               Minimum="5"
                                               Maximum="30"
@@ -145,7 +147,7 @@
                                 </sliders:SfSlider.TrackStyle>
                             </sliders:SfSlider>
                             <!-- Number of cycles -->
-                            <Label Text="Number of cylces:"/>
+                            <Label Text="Number of cylces:" Margin="0,15,0,0" TextColor="Black"/>
                             <sliders:SfSlider x:Name="cycleSlider"
                                               Minimum="1"
                                               Maximum="5"

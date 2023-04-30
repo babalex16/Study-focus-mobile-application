@@ -1,12 +1,14 @@
 ﻿using System.Timers;
 using System.Xml.Linq;
+using Plugin.LocalNotification;
 using Syncfusion.Maui.Popup;
 using Syncfusion.Maui.Sliders;
 namespace StudyFocusMobApp;
 
 public partial class MainPage : ContentPage
 {
-    private readonly CancellationTokenSource _cancellationTokenSource;
+    private readonly CancellationTokenSource _cancellationTokenSource = new();
+    // fields initialized to set up clock in case when user does not click settings and instantly clicks play after the boot
     private int _remainingTimeInSeconds = 20; // used for both work and rest for main clock
     private int _workingTimeInSeconds = 20;
     private int _restTimeInSeconds = 10;
@@ -15,7 +17,7 @@ public partial class MainPage : ContentPage
     private bool _isRunning = false;
     private bool _isWorkingCycle = false;
     private bool _isPaused = false;
-    private double _coveredTimePercentage = 0.0;
+    private double _coveredTimePercentage = 0.0; // field binded to the graphical view
     public double CoveredTimePercentage
     {
         get { return _coveredTimePercentage; }
@@ -29,7 +31,9 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
+        
         BindingContext = this;
+        LocalNotificationCenter.Current.NotificationActionTapped += Current_NotificationActionTapped;
     }
 
     private async void OnPlayPauseButtonClicked(object sender, EventArgs e)
@@ -68,6 +72,7 @@ public partial class MainPage : ContentPage
                     if (_remainingTimeInSeconds <= 0)
                     {
                         UpdateCountdownLabel();
+                        SendNotification();
                         await Task.Delay(3000); // Delay between work - rest cycle transitions
                     }
                     UpdateCountdownLabel();
@@ -106,6 +111,23 @@ public partial class MainPage : ContentPage
             _cancellationTokenSource?.Cancel();
             UpdatePlayPauseButtonSource();
         }
+    }
+
+    private void SendNotification()
+    {
+        var request = new NotificationRequest
+        {
+            NotificationId = 1337,
+            Title = "Timer's up!",
+            Description = "Come back ^_^",
+            BadgeNumber = 42,
+            Schedule = new NotificationRequestSchedule
+            {
+                NotifyTime = DateTime.Now.AddSeconds(1)
+            }
+        };
+
+        LocalNotificationCenter.Current.Show(request);
     }
 
     private void OnStopButtonClicked(object sender, EventArgs e)
@@ -170,5 +192,17 @@ public partial class MainPage : ContentPage
     private void settingsPopup_Closed(object sender, EventArgs e)
     {
         UpdateCountdownLabel();
+    }
+
+    private void Current_NotificationActionTapped(Plugin.LocalNotification.EventArgs.NotificationActionEventArgs e)
+    {
+        if (e.IsDismissed)
+        {
+
+        }
+        else if (e.IsTapped)
+        {
+
+        }
     }
 }
