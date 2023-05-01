@@ -39,3 +39,15 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = StudyFocusMobApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[D:/ProjectLab/Study-focus-mobile-application/StudyFocusMobApp/StatisticsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StudyFocusMobApp.StatisticsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = StatisticsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = StatisticsPage.xaml
+
+[D:/ProjectLab/Study-focus-mobile-application/StudyFocusMobApp/TodoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StudyFocusMobApp.TodoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = TodoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = TodoPage.xaml

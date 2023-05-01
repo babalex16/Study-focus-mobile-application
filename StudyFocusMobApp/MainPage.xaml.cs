@@ -191,6 +191,7 @@ public partial class MainPage : ContentPage
 
     private void settingsPopup_Closed(object sender, EventArgs e)
     {
+        CalculatePercentage(_workingTimeInSeconds);
         UpdateCountdownLabel();
     }
 
