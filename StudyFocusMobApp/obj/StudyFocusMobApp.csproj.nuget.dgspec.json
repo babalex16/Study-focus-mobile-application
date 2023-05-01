@@ -75,6 +75,10 @@
               "target": "Package",
               "version": "[10.1.4, )"
             },
+            "SQLitePCLRaw.provider.dynamic_cdecl": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",
               "version": "[21.1.38, )"
@@ -86,6 +90,10 @@
             "Syncfusion.Maui.Sliders": {
               "target": "Package",
               "version": "[21.1.38, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [
@@ -193,6 +201,10 @@
               "target": "Package",
               "version": "[10.1.4, )"
             },
+            "SQLitePCLRaw.provider.dynamic_cdecl": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",
               "version": "[21.1.38, )"
@@ -209,6 +221,10 @@
               "target": "Package",
               "version": "[6.0.1, )",
               "autoReferenced": true
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [
@@ -292,6 +308,10 @@
               "target": "Package",
               "version": "[10.1.4, )"
             },
+            "SQLitePCLRaw.provider.dynamic_cdecl": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",
               "version": "[21.1.38, )"
@@ -308,6 +328,10 @@
               "target": "Package",
               "version": "[6.0.1, )",
               "autoReferenced": true
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [
@@ -398,6 +422,10 @@
               "target": "Package",
               "version": "[10.1.4, )"
             },
+            "SQLitePCLRaw.provider.dynamic_cdecl": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",
               "version": "[21.1.38, )"
@@ -409,6 +437,10 @@
             "Syncfusion.Maui.Sliders": {
               "target": "Package",
               "version": "[21.1.38, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [

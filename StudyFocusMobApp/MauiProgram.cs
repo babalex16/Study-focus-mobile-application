@@ -1,4 +1,5 @@
 ﻿using Plugin.LocalNotification;
+using StudyFocusMobApp.Services;
 using Syncfusion.Maui.Core.Hosting;
 
 namespace StudyFocusMobApp;
@@ -19,6 +20,9 @@ public static class MauiProgram
 
             });
         builder.ConfigureSyncfusionCore();
+
+        string dbPath = FileAccessHelper.GetLocalFilePath("todolist.db3");
+        builder.Services.AddSingleton<TodoService>(s => ActivatorUtilities.CreateInstance<TodoService>(s, dbPath));
 
         return builder.Build();
 	}

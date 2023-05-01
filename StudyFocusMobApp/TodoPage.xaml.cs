@@ -1,3 +1,5 @@
+using StudyFocusMobApp.Models;
+
 namespace StudyFocusMobApp;
 
 public partial class TodoPage : ContentPage
@@ -6,4 +8,19 @@ public partial class TodoPage : ContentPage
 	{
 		InitializeComponent();
 	}
+    public async void OnNewButtonClicked(object sender, EventArgs args)
+    {
+        statusMessage.Text = "";
+
+        await App.TodoSvc.AddNewTodoItem(newTodoItem.Text);
+        statusMessage.Text = App.TodoSvc.StatusMessage;
+    }
+
+    public async void OnGetButtonClicked(object sender, EventArgs args)
+    {
+        statusMessage.Text = "";
+
+        List<TodoItem> todos = await App.TodoSvc.GetAllTodoItems();
+        todoList.ItemsSource = todos;
+    }
 }
