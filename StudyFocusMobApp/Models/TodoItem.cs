@@ -11,7 +11,7 @@ namespace StudyFocusMobApp.Models
     public class TodoItem
     {
         [PrimaryKey, AutoIncrement]
-        public int ID { get; set; }
+        public int Id { get; set; }
         
         [MaxLength(100)]
         public string Description { get; set; }

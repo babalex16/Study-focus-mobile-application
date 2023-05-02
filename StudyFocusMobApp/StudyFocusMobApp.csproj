@@ -72,10 +72,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="StatisticsPage.xaml">
+	  <MauiXaml Update="Views\StatisticsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="TodoPage.xaml">
+	  <MauiXaml Update="Views\TodoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

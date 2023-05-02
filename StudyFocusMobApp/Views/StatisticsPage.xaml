@@ -5,7 +5,7 @@
              Title="StatisticsPage">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="TODO: Statistics"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
     </VerticalStackLayout>
