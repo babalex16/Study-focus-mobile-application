@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:inputLayout="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
              x:Class="StudyFocusMobApp.TodoPage"
              BackgroundColor="{DynamicResource Light}"
              Title="TodoPage">
@@ -18,8 +19,19 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Entry x:Name="newTodoItem"
-           Placeholder="Enter description" />
+        <Frame BorderColor="Gray"
+               CornerRadius="10"
+               Padding="4"
+               Margin="10">
+
+            <Entry x:Name="newTodoItem"
+                   ClearButtonVisibility ="WhileEditing"
+                   MaxLength="100"
+                   Placeholder="Add a new todo item"
+                   Margin="20,0,0,0"
+            />
+        </Frame>
+       
 
         <Button Text="Add Item"
             Grid.Row="1"
@@ -31,22 +43,36 @@
         <Button Text="Get All To-dos"
             Grid.Row="3"
             Clicked="OnGetButtonClicked" />
-
+        
         <CollectionView x:Name="todoList" Grid.Row="4">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="2*" />
-                        </Grid.ColumnDefinitions>
+                    <Frame BorderColor="Gray"
+                               CornerRadius="5"
+                               Padding="15, 6, 6, 6"
+                               Margin="5"
+                               >
+                        <Grid >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
 
-                        <Label Text="{Binding Id}" />
-                        <Label Grid.Column="1" Text="{Binding Description}" />
-                    </Grid>
+                            <CheckBox x:Name="taskCheckBox"
+                                      CheckedChanged="taskCheckBox_CheckedChanged"
+                                      IsChecked="false" 
+                                      Margin="10"
+                                      />
+
+                            <Label Grid.Column="1" 
+                                   Text="{Binding Description}"
+                                   VerticalOptions="Center"/>
+
+                        </Grid>
+                    </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-
     </Grid>
+    
 </ContentPage>

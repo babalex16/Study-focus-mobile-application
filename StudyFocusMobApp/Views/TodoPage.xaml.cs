@@ -23,4 +23,15 @@ public partial class TodoPage : ContentPage
         List<TodoItem> todos = await App.TodoSvc.GetAllTodoItems();
         todoList.ItemsSource = todos;
     }
+    
+    //TODO
+    private async void taskCheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
+    {
+        //statusMessage.Text = "";
+
+        
+        //int id = int.Parse("1");
+        //await App.TodoSvc.DeleteTodoItem(id);
+        //statusMessage.Text = App.TodoSvc.StatusMessage;
+    }
 }

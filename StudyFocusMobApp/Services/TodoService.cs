@@ -52,6 +52,21 @@ namespace StudyFocusMobApp.Services
 
         }
 
+        public async Task DeleteTodoItem(int id)
+        {
+            int result = 0;
+            try
+            {
+                await Init();
+                result = await conn.DeleteAsync(id);
+                StatusMessage = string.Format("{0} record(s) deleted )", result);
+            }
+            catch (Exception ex)
+            {
+                StatusMessage = string.Format("Failed to delete . Error: {1}", ex.Message);
+            }
+        }
+
         public async Task<List<TodoItem>> GetAllTodoItems()
         {
             try
