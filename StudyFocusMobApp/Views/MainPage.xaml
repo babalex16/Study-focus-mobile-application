@@ -93,7 +93,9 @@
                           Clicked="notificationButton_Clicked"
                             Source="ic_notification.png"
                          MaximumHeightRequest="70"></ImageButton>
-            <ImageButton Source="ic_note.png"
+            <ImageButton x:Name="musicButton"
+                         Clicked="musicButton_Clicked"
+                        Source="ic_note.png"
                          MaximumHeightRequest="70"></ImageButton>
             <ImageButton Source="ic_settings.png"
                          MaximumHeightRequest="70"

@@ -7,6 +7,7 @@ using CommunityToolkit.Maui.Alerts;
 using Android.App;
 using StudyFocusMobApp.Services;
 using NotificationManager = StudyFocusMobApp.Services.NotificationManager;
+using Plugin.Maui.Audio;
 
 namespace StudyFocusMobApp;
 
@@ -24,6 +25,9 @@ public partial class MainPage : ContentPage
     private bool _isPaused = false;
     private double _coveredTimePercentage = 0.0; // field binded to the graphical view
     private bool notificationsVisible = true;
+    private readonly IAudioManager audioManager;
+    private IAudioPlayer audioPlayer;
+
     public double CoveredTimePercentage
     {
         get { return _coveredTimePercentage; }
@@ -34,10 +38,10 @@ public partial class MainPage : ContentPage
         }
     }
 
-    public MainPage()
+    public MainPage(IAudioManager audioManager)
     {
         InitializeComponent();
-        
+        this.audioManager = audioManager;
         BindingContext = this;
         LocalNotificationCenter.Current.NotificationActionTapped += Current_NotificationActionTapped;
     }
@@ -229,5 +233,12 @@ public partial class MainPage : ContentPage
 
         notificationsVisible = !notificationsVisible;
         
+    }
+
+    private async void musicButton_Clicked(object sender, EventArgs e)
+    {
+        var audioFile = await FileSystem.OpenAppPackageFileAsync("lofi.mp3");
+        audioPlayer = audioManager.CreatePlayer(audioFile);
+        audioPlayer.Play();
     }
 }

@@ -79,6 +79,10 @@
               "target": "Package",
               "version": "[10.1.4, )"
             },
+            "Plugin.Maui.Audio": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "SQLitePCLRaw.provider.dynamic_cdecl": {
               "target": "Package",
               "version": "[2.1.4, )"
@@ -209,6 +213,10 @@
               "target": "Package",
               "version": "[10.1.4, )"
             },
+            "Plugin.Maui.Audio": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "SQLitePCLRaw.provider.dynamic_cdecl": {
               "target": "Package",
               "version": "[2.1.4, )"
@@ -319,6 +327,10 @@
             "Plugin.LocalNotification": {
               "target": "Package",
               "version": "[10.1.4, )"
+            },
+            "Plugin.Maui.Audio": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             },
             "SQLitePCLRaw.provider.dynamic_cdecl": {
               "target": "Package",
@@ -437,6 +449,10 @@
             "Plugin.LocalNotification": {
               "target": "Package",
               "version": "[10.1.4, )"
+            },
+            "Plugin.Maui.Audio": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             },
             "SQLitePCLRaw.provider.dynamic_cdecl": {
               "target": "Package",

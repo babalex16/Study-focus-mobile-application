@@ -1034,3 +1034,5 @@ D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-a
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\lp\175\jl\files.cache
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\resizetizer\r\drawable\ic_add.png
 D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\resizetizer\r\drawable\ic_delete.png
+D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\assets\Plugin.Maui.Audio.dll
+D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-android\android\src\crc64467b05f37239e7a6\StreamMediaDataSource.java

@@ -240,6 +240,19 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "sqlite-net-pcl/1.8.116": {
         "type": "package",
         "dependencies": {
@@ -2497,6 +2510,19 @@
         },
         "runtime": {
           "lib/net6.0-android31.0/Plugin.LocalNotification.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
             "related": ".xml"
           }
         }
@@ -4762,6 +4788,19 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "sqlite-net-pcl/1.8.116": {
         "type": "package",
         "dependencies": {
@@ -7019,6 +7058,19 @@
         },
         "runtime": {
           "lib/net6.0-android31.0/Plugin.LocalNotification.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
             "related": ".xml"
           }
         }
@@ -9284,6 +9336,19 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "sqlite-net-pcl/1.8.116": {
         "type": "package",
         "dependencies": {
@@ -11541,6 +11606,19 @@
         },
         "runtime": {
           "lib/net6.0-android31.0/Plugin.LocalNotification.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
             "related": ".xml"
           }
         }
@@ -13806,6 +13884,19 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "sqlite-net-pcl/1.8.116": {
         "type": "package",
         "dependencies": {
@@ -16067,6 +16158,19 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "sqlite-net-pcl/1.8.116": {
         "type": "package",
         "dependencies": {
@@ -18310,6 +18414,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.8.116": {
         "type": "package",
         "dependencies": {
@@ -18771,6 +18887,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.8.116": {
         "type": "package",
         "dependencies": {
@@ -19179,6 +19307,18 @@
           "lib/net6.0-ios16.0/Plugin.LocalNotification.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
         }
       },
       "sqlite-net-pcl/1.8.116": {
@@ -19591,6 +19731,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.8.116": {
         "type": "package",
         "dependencies": {
@@ -19999,6 +20151,18 @@
           "lib/net6.0-ios16.0/Plugin.LocalNotification.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
         }
       },
       "sqlite-net-pcl/1.8.116": {
@@ -20411,6 +20575,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.8.116": {
         "type": "package",
         "dependencies": {
@@ -20816,6 +20992,18 @@
           "lib/net6.0-ios16.0/Plugin.LocalNotification.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
         }
       },
       "sqlite-net-pcl/1.8.116": {
@@ -21225,6 +21413,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.8.116": {
         "type": "package",
         "dependencies": {
@@ -21630,6 +21830,18 @@
           "lib/net6.0/Plugin.LocalNotification.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
         }
       },
       "sqlite-net-pcl/1.8.116": {
@@ -22090,6 +22302,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.8.116": {
         "type": "package",
         "dependencies": {
@@ -22495,6 +22719,18 @@
           "lib/net6.0/Plugin.LocalNotification.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
         }
       },
       "sqlite-net-pcl/1.8.116": {
@@ -22904,6 +23140,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.8.116": {
         "type": "package",
         "dependencies": {
@@ -23309,6 +23557,18 @@
           "lib/net6.0/Plugin.LocalNotification.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
         }
       },
       "sqlite-net-pcl/1.8.116": {
@@ -23718,6 +23978,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.8.116": {
         "type": "package",
         "dependencies": {
@@ -24122,6 +24394,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.8.116": {
         "type": "package",
         "dependencies": {
@@ -24524,6 +24808,18 @@
           "lib/net6.0/Plugin.LocalNotification.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll": {}
         }
       },
       "sqlite-net-pcl/1.8.116": {
@@ -25060,6 +25356,15 @@
           "lib/net6.0/Plugin.LocalNotification.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
         }
       },
       "sqlite-net-pcl/1.8.116": {
@@ -25613,6 +25918,15 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.8.116": {
         "type": "package",
         "dependencies": {
@@ -26111,6 +26425,15 @@
           "lib/net6.0/Plugin.LocalNotification.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
         }
       },
       "sqlite-net-pcl/1.8.116": {
@@ -26613,6 +26936,15 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.8.116": {
         "type": "package",
         "dependencies": {
@@ -27111,6 +27443,15 @@
           "lib/net6.0/Plugin.LocalNotification.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
         }
       },
       "sqlite-net-pcl/1.8.116": {
@@ -27613,6 +27954,15 @@
           }
         }
       },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.8.116": {
         "type": "package",
         "dependencies": {
@@ -28108,6 +28458,15 @@
           "lib/net6.0/Plugin.LocalNotification.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
         }
       },
       "sqlite-net-pcl/1.8.116": {
@@ -28611,6 +28970,15 @@
           "lib/net6.0/Plugin.LocalNotification.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
         }
       },
       "sqlite-net-pcl/1.8.116": {
@@ -29955,6 +30323,24 @@
         "lib/xamarinios10/Plugin.LocalNotification.xml",
         "plugin.localnotification.10.1.4.nupkg.sha512",
         "plugin.localnotification.nuspec"
+      ]
+    },
+    "Plugin.Maui.Audio/1.0.0": {
+      "sha512": "WBlOOWSMZ4C6c4QBx4WSv+ytIHzXezmazvj7H2D/M6gB9+dpVe87RH5l8fX00iWOhI4UI0WuG0pBuAEUfyDV9Q==",
+      "type": "package",
+      "path": "plugin.maui.audio/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net6.0-android31.0/Plugin.Maui.Audio.dll",
+        "lib/net6.0-android31.0/Plugin.Maui.Audio.xml",
+        "lib/net6.0-ios16.0/Plugin.Maui.Audio.dll",
+        "lib/net6.0-maccatalyst15.4/Plugin.Maui.Audio.dll",
+        "lib/net6.0-windows10.0.19041/Plugin.Maui.Audio.dll",
+        "lib/net6.0/Plugin.Maui.Audio.dll",
+        "plugin.maui.audio.1.0.0.nupkg.sha512",
+        "plugin.maui.audio.nuspec"
       ]
     },
     "sqlite-net-pcl/1.8.116": {
@@ -32384,6 +32770,7 @@
       "Microsoft.Maui.Dependencies >= 6.0.552",
       "Microsoft.Maui.Extensions >= 6.0.552",
       "Plugin.LocalNotification >= 10.1.4",
+      "Plugin.Maui.Audio >= 1.0.0",
       "SQLitePCLRaw.provider.dynamic_cdecl >= 2.1.4",
       "Syncfusion.Maui.Gauges >= 21.1.38",
       "Syncfusion.Maui.Popup >= 21.1.38",
@@ -32395,6 +32782,7 @@
       "Microsoft.Maui.Dependencies >= 6.0.552",
       "Microsoft.Maui.Extensions >= 6.0.552",
       "Plugin.LocalNotification >= 10.1.4",
+      "Plugin.Maui.Audio >= 1.0.0",
       "SQLitePCLRaw.provider.dynamic_cdecl >= 2.1.4",
       "Syncfusion.Maui.Gauges >= 21.1.38",
       "Syncfusion.Maui.Popup >= 21.1.38",
@@ -32407,6 +32795,7 @@
       "Microsoft.Maui.Dependencies >= 6.0.552",
       "Microsoft.Maui.Extensions >= 6.0.552",
       "Plugin.LocalNotification >= 10.1.4",
+      "Plugin.Maui.Audio >= 1.0.0",
       "SQLitePCLRaw.provider.dynamic_cdecl >= 2.1.4",
       "Syncfusion.Maui.Gauges >= 21.1.38",
       "Syncfusion.Maui.Popup >= 21.1.38",
@@ -32420,6 +32809,7 @@
       "Microsoft.Maui.Extensions >= 6.0.552",
       "Microsoft.Windows.SDK.BuildTools >= 10.0.22000.194",
       "Plugin.LocalNotification >= 10.1.4",
+      "Plugin.Maui.Audio >= 1.0.0",
       "SQLitePCLRaw.provider.dynamic_cdecl >= 2.1.4",
       "Syncfusion.Maui.Gauges >= 21.1.38",
       "Syncfusion.Maui.Popup >= 21.1.38",
@@ -32505,6 +32895,10 @@
           "Plugin.LocalNotification": {
             "target": "Package",
             "version": "[10.1.4, )"
+          },
+          "Plugin.Maui.Audio": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           },
           "SQLitePCLRaw.provider.dynamic_cdecl": {
             "target": "Package",
@@ -32636,6 +33030,10 @@
             "target": "Package",
             "version": "[10.1.4, )"
           },
+          "Plugin.Maui.Audio": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "SQLitePCLRaw.provider.dynamic_cdecl": {
             "target": "Package",
             "version": "[2.1.4, )"
@@ -32746,6 +33144,10 @@
           "Plugin.LocalNotification": {
             "target": "Package",
             "version": "[10.1.4, )"
+          },
+          "Plugin.Maui.Audio": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           },
           "SQLitePCLRaw.provider.dynamic_cdecl": {
             "target": "Package",
@@ -32864,6 +33266,10 @@
           "Plugin.LocalNotification": {
             "target": "Package",
             "version": "[10.1.4, )"
+          },
+          "Plugin.Maui.Audio": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           },
           "SQLitePCLRaw.provider.dynamic_cdecl": {
             "target": "Package",
