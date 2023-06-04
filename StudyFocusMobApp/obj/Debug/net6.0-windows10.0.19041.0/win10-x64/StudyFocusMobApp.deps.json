@@ -9,12 +9,16 @@
     ".NETCoreApp,Version=v6.0/win10-x64": {
       "StudyFocusMobApp/1.0": {
         "dependencies": {
+          "CommunityToolkit.Maui": "2.0.0",
           "Microsoft.Maui.Dependencies": "6.0.552",
           "Microsoft.Maui.Extensions": "6.0.552",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194",
+          "Plugin.LocalNotification": "10.1.4",
+          "SQLitePCLRaw.provider.dynamic_cdecl": "2.1.4",
           "Syncfusion.Maui.Gauges": "21.1.38",
           "Syncfusion.Maui.Popup": "21.1.38",
           "Syncfusion.Maui.Sliders": "21.1.38",
+          "sqlite-net-pcl": "1.8.116",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "6.0.15",
           "runtimepack.Microsoft.Maui.Core.Runtime.win": "6.0.552",
           "runtimepack.Microsoft.Maui.Controls.Runtime.win": "6.0.552",
@@ -906,6 +910,25 @@
           }
         }
       },
+      "CommunityToolkit.Maui/2.0.0": {
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "2.0.0"
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/2.0.0": {
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
@@ -1105,6 +1128,71 @@
           }
         }
       },
+      "Plugin.LocalNotification/10.1.4": {
+        "runtime": {
+          "lib/net6.0/Plugin.LocalNotification.dll": {
+            "assemblyVersion": "10.1.4.0",
+            "fileVersion": "10.1.4.0"
+          }
+        }
+      },
+      "sqlite-net-pcl/1.8.116": {
+        "dependencies": {
+          "SQLitePCLRaw.bundle_green": "2.0.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SQLite-net.dll": {
+            "assemblyVersion": "1.8.116.0",
+            "fileVersion": "1.8.116.0"
+          }
+        }
+      },
+      "SQLitePCLRaw.bundle_green/2.0.4": {
+        "dependencies": {
+          "SQLitePCLRaw.core": "2.1.4",
+          "SQLitePCLRaw.lib.e_sqlite3": "2.0.4",
+          "SQLitePCLRaw.provider.dynamic_cdecl": "2.1.4"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll": {
+            "assemblyVersion": "2.0.4.976",
+            "fileVersion": "2.0.4.976"
+          },
+          "lib/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll": {
+            "assemblyVersion": "2.0.4.976",
+            "fileVersion": "2.0.4.976"
+          }
+        }
+      },
+      "SQLitePCLRaw.core/2.1.4": {
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {
+            "assemblyVersion": "2.1.4.1835",
+            "fileVersion": "2.1.4.1835"
+          }
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3/2.0.4": {
+        "native": {
+          "runtimes/win-x64/native/e_sqlite3.dll": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SQLitePCLRaw.provider.dynamic_cdecl/2.1.4": {
+        "dependencies": {
+          "SQLitePCLRaw.core": "2.1.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {
+            "assemblyVersion": "2.1.4.1835",
+            "fileVersion": "2.1.4.1835"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/21.1.38": {
         "runtime": {
           "lib/net6.0-windows10.0.19041.0/Syncfusion.Licensing.dll": {
@@ -1160,6 +1248,7 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         }
       },
+      "System.Memory/4.5.3": {},
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {}
     }
   },
@@ -1193,6 +1282,20 @@
       "type": "runtimepack",
       "serviceable": false,
       "sha512": ""
+    },
+    "CommunityToolkit.Maui/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-imxE+wbX0Ss0rM1z1Jh/W2giVqm6E+FEcgcz0j0Sgh99rTzi39PGaw03RNUgxHXBVbjn+tMX5skvo6uo8N+r8Q==",
+      "path": "communitytoolkit.maui/2.0.0",
+      "hashPath": "communitytoolkit.maui.2.0.0.nupkg.sha512"
+    },
+    "CommunityToolkit.Maui.Core/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XE2VIw9LgUmrc8XHD5zp0HJ20NWwzIuZeT3qixHDxi5jvRjfeQY8Pje6nKHZ4EpFZQF1GNmiKVd+b46BOHdggw==",
+      "path": "communitytoolkit.maui.core/2.0.0",
+      "hashPath": "communitytoolkit.maui.core.2.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration/6.0.1": {
       "type": "package",
@@ -1299,6 +1402,48 @@
       "path": "microsoft.windowsappsdk/1.1.5",
       "hashPath": "microsoft.windowsappsdk.1.1.5.nupkg.sha512"
     },
+    "Plugin.LocalNotification/10.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Jhva/5NIms2VY6eKOonsKpZEZFxU90Tr6b+aDasIFxB16+rWUrQqBA+I1C7pQDh/09sK31EeRqnZ/2RZYZt3pg==",
+      "path": "plugin.localnotification/10.1.4",
+      "hashPath": "plugin.localnotification.10.1.4.nupkg.sha512"
+    },
+    "sqlite-net-pcl/1.8.116": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W0NuwAOVVAR9LP4eZwNBIrim1p3EN7t8iNfSHXEhtzKAd4YyItekoQ8NyWYs4faVSrN2KZr/P5u4hycCjKKexg==",
+      "path": "sqlite-net-pcl/1.8.116",
+      "hashPath": "sqlite-net-pcl.1.8.116.nupkg.sha512"
+    },
+    "SQLitePCLRaw.bundle_green/2.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ubFgOHDmtTcq2LU7Ss10yHnFVMm2rFVr65Ggi+Mh514KjGx4pal98P2zSvZtWf3wbtJw6G1InBgeozBtnpEfKQ==",
+      "path": "sqlitepclraw.bundle_green/2.0.4",
+      "hashPath": "sqlitepclraw.bundle_green.2.0.4.nupkg.sha512"
+    },
+    "SQLitePCLRaw.core/2.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-inBjvSHo9UDKneGNzfUfDjK08JzlcIhn1+SP5Y3m6cgXpCxXKCJDy6Mka7LpgSV+UZmKSnC8rTwB0SQ0xKu5pA==",
+      "path": "sqlitepclraw.core/2.1.4",
+      "hashPath": "sqlitepclraw.core.2.1.4.nupkg.sha512"
+    },
+    "SQLitePCLRaw.lib.e_sqlite3/2.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oetvmtDZOE4Nnrtxd8Trapl9geBiu0rDCUXff46qGYjnUwzaU1mZ3OHnfR402tl32rx8gBWg3n5OBRaPJRbsGw==",
+      "path": "sqlitepclraw.lib.e_sqlite3/2.0.4",
+      "hashPath": "sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512"
+    },
+    "SQLitePCLRaw.provider.dynamic_cdecl/2.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZsaKKhgYF9B1fvcnOGKl3EycNAwd9CRWX7v0rEfuPWhQQ5Jjpvf2VEHahiLIGHio3hxi3EIKFJw9KvyowWOUAw==",
+      "path": "sqlitepclraw.provider.dynamic_cdecl/2.1.4",
+      "hashPath": "sqlitepclraw.provider.dynamic_cdecl.2.1.4.nupkg.sha512"
+    },
     "Syncfusion.Maui.Core/21.1.38": {
       "type": "package",
       "serviceable": true,
@@ -1333,6 +1478,13 @@
       "sha512": "sha512-frQDfv0rl209cKm1lnwTgFPzNigy2EKk1BS3uAvHvlBVKe5cymGyHO+Sj+NLv5VF/AhHsqPIUUwya5oV4CHMUw==",
       "path": "system.diagnostics.diagnosticsource/6.0.0",
       "hashPath": "system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
     },
     "System.Runtime.CompilerServices.Unsafe/6.0.0": {
       "type": "package",

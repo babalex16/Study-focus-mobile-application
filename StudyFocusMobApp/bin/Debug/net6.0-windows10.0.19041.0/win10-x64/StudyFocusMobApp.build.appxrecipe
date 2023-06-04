@@ -724,6 +724,12 @@
     <AppxPackagedFile Include="C:\Users\sasha\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.28\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sasha\.nuget\packages\communitytoolkit.maui\2.0.0\lib\net6.0-windows10.0.19041\CommunityToolkit.Maui.dll">
+      <PackagePath>CommunityToolkit.Maui.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sasha\.nuget\packages\communitytoolkit.maui.core\2.0.0\lib\net6.0-windows10.0.19041\CommunityToolkit.Maui.Core.dll">
+      <PackagePath>CommunityToolkit.Maui.Core.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sasha\.nuget\packages\microsoft.extensions.configuration\6.0.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
     </AppxPackagedFile>
@@ -790,6 +796,24 @@
     <AppxPackagedFile Include="C:\Users\sasha\.nuget\packages\microsoft.windowsappsdk\1.1.5\lib\net5.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sasha\.nuget\packages\plugin.localnotification\10.1.4\lib\net6.0\Plugin.LocalNotification.dll">
+      <PackagePath>Plugin.LocalNotification.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sasha\.nuget\packages\sqlite-net-pcl\1.8.116\lib\netstandard2.0\SQLite-net.dll">
+      <PackagePath>SQLite-net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sasha\.nuget\packages\sqlitepclraw.bundle_green\2.0.4\lib\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sasha\.nuget\packages\sqlitepclraw.bundle_green\2.0.4\lib\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll">
+      <PackagePath>SQLitePCLRaw.nativelibrary.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sasha\.nuget\packages\sqlitepclraw.core\2.1.4\lib\netstandard2.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sasha\.nuget\packages\sqlitepclraw.provider.dynamic_cdecl\2.1.4\lib\netstandard2.0\SQLitePCLRaw.provider.dynamic_cdecl.dll">
+      <PackagePath>SQLitePCLRaw.provider.dynamic_cdecl.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sasha\.nuget\packages\syncfusion.maui.core\21.1.38\lib\net6.0-windows10.0.19041.0\Syncfusion.Licensing.dll">
       <PackagePath>Syncfusion.Licensing.dll</PackagePath>
     </AppxPackagedFile>
@@ -814,6 +838,9 @@
     <AppxPackagedFile Include="C:\Users\sasha\.nuget\packages\microsoft.windowsappsdk\1.1.5\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sasha\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\win-x64\native\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\StudyFocusMobApp.deps.json">
       <PackagePath>StudyFocusMobApp.deps.json</PackagePath>
     </AppxPackagedFile>
@@ -829,20 +856,26 @@
     <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
-      <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\Resources\Raw\cycleFinishSound.mp3">
+      <PackagePath>cycleFinishSound.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
-      <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
+    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\studysplashscreenSplashScreen.scale-100.png">
+      <PackagePath>studysplashscreenSplashScreen.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
-      <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
+    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\studysplashscreenSplashScreen.scale-125.png">
+      <PackagePath>studysplashscreenSplashScreen.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
-      <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
+    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\studysplashscreenSplashScreen.scale-150.png">
+      <PackagePath>studysplashscreenSplashScreen.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
-      <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
+    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\studysplashscreenSplashScreen.scale-200.png">
+      <PackagePath>studysplashscreenSplashScreen.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\studysplashscreenSplashScreen.scale-400.png">
+      <PackagePath>studysplashscreenSplashScreen.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\Lobster-Regular.ttf">
+      <PackagePath>Lobster-Regular.ttf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -988,65 +1021,35 @@
     <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
-      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_note.scale-100.png">
+      <PackagePath>ic_note.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
-      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
+    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_notification.scale-100.png">
+      <PackagePath>ic_notification.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
-      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
+    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_pause.scale-100.png">
+      <PackagePath>ic_pause.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
-      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
+    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_play.scale-100.png">
+      <PackagePath>ic_play.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
-      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_settings.scale-100.png">
+      <PackagePath>ic_settings.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\music_note.scale-100.png">
-      <PackagePath>music_note.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_stop.scale-100.png">
+      <PackagePath>ic_stop.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\music_note.scale-125.png">
-      <PackagePath>music_note.scale-125.png</PackagePath>
+    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menu.scale-100.png">
+      <PackagePath>menu.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\music_note.scale-150.png">
-      <PackagePath>music_note.scale-150.png</PackagePath>
+    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\statistics.scale-100.png">
+      <PackagePath>statistics.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\music_note.scale-200.png">
-      <PackagePath>music_note.scale-200.png</PackagePath>
+    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\stopwatch.scale-100.png">
+      <PackagePath>stopwatch.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\music_note.scale-400.png">
-      <PackagePath>music_note.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\notifications_off.scale-100.png">
-      <PackagePath>notifications_off.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\notifications_off.scale-125.png">
-      <PackagePath>notifications_off.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\notifications_off.scale-150.png">
-      <PackagePath>notifications_off.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\notifications_off.scale-200.png">
-      <PackagePath>notifications_off.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\notifications_off.scale-400.png">
-      <PackagePath>notifications_off.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings.scale-100.png">
-      <PackagePath>settings.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings.scale-125.png">
-      <PackagePath>settings.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings.scale-150.png">
-      <PackagePath>settings.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings.scale-200.png">
-      <PackagePath>settings.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings.scale-400.png">
-      <PackagePath>settings.scale-400.png</PackagePath>
+    <AppxPackagedFile Include="D:\ProjectLab\Study-focus-mobile-application\StudyFocusMobApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\todo_list.scale-100.png">
+      <PackagePath>todo_list.scale-100.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
