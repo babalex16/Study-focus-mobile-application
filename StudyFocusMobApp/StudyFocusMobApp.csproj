@@ -49,6 +49,8 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\Lobster-Regular.ttf" />
+	  <None Remove="Resources\Images\ic_add.png" />
+	  <None Remove="Resources\Images\ic_delete.png" />
 	  <None Remove="Resources\Images\ic_note.png" />
 	  <None Remove="Resources\Images\ic_notification.png" />
 	  <None Remove="Resources\Images\ic_pause.png" />

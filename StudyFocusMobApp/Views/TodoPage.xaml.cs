@@ -7,19 +7,23 @@ public partial class TodoPage : ContentPage
 	public TodoPage()
 	{
 		InitializeComponent();
-	}
+    }
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        OnGetButtonClicked(this, EventArgs.Empty);
+    }
+
     public async void OnNewButtonClicked(object sender, EventArgs args)
     {
-        statusMessage.Text = "";
 
         await App.TodoSvc.AddNewTodoItem(newTodoItem.Text);
-        statusMessage.Text = App.TodoSvc.StatusMessage;
+        List<TodoItem> todos = await App.TodoSvc.GetAllTodoItems();
+        todoList.ItemsSource = todos;
     }
 
     public async void OnGetButtonClicked(object sender, EventArgs args)
     {
-        statusMessage.Text = "";
-
         List<TodoItem> todos = await App.TodoSvc.GetAllTodoItems();
         todoList.ItemsSource = todos;
     }
@@ -35,13 +39,10 @@ public partial class TodoPage : ContentPage
         //statusMessage.Text = App.TodoSvc.StatusMessage;
     }
 
-    private async void Button_Clicked(object sender, EventArgs e)
+    private async void deleteButton_Clicked(object sender, EventArgs e)
     {
-        statusMessage.Text = "";
-
 
         int id = int.Parse("1");
         await App.TodoSvc.DeleteTodoItem(id);
-        statusMessage.Text = App.TodoSvc.StatusMessage;
     }
 }

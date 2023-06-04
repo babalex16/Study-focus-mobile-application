@@ -10,10 +10,8 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -32,21 +30,8 @@
             />
         </Frame>
 
-        <Button Text="Delete Item"
-            Grid.Row="1"
-            Clicked="Button_Clicked"/>
-        <!--<Button Text="Add Item"
-            Grid.Row="1"
-            Clicked="OnNewButtonClicked" />-->
-
-        <Label x:Name="statusMessage"
-           Grid.Row="2" />
-
-        <Button Text="Get All To-dos"
-            Grid.Row="3"
-            Clicked="OnGetButtonClicked" />
         
-        <CollectionView x:Name="todoList" Grid.Row="4">
+        <CollectionView x:Name="todoList" Grid.Row="1">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Frame BorderColor="Gray"
@@ -75,6 +60,17 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+
+        <HorizontalStackLayout Padding="20" Margin="10" Spacing="70"  HorizontalOptions="Center" Grid.Row="2">
+            <ImageButton  x:Name="deleteButton"
+                         MaximumHeightRequest="70"
+                          Source="ic_delete.png"
+                         Clicked="deleteButton_Clicked">
+            </ImageButton>
+            <ImageButton Source="ic_add.png"
+                         MaximumHeightRequest="70"
+                         Clicked="OnNewButtonClicked"></ImageButton>
+        </HorizontalStackLayout>
     </Grid>
     
 </ContentPage>
