@@ -4,6 +4,9 @@ using Plugin.LocalNotification;
 using Syncfusion.Maui.Popup;
 using Syncfusion.Maui.Sliders;
 using CommunityToolkit.Maui.Alerts;
+using Android.App;
+using StudyFocusMobApp.Services;
+using NotificationManager = StudyFocusMobApp.Services.NotificationManager;
 
 namespace StudyFocusMobApp;
 
@@ -20,6 +23,7 @@ public partial class MainPage : ContentPage
     private bool _isWorkingCycle = false;
     private bool _isPaused = false;
     private double _coveredTimePercentage = 0.0; // field binded to the graphical view
+    private bool notificationsVisible = true;
     public double CoveredTimePercentage
     {
         get { return _coveredTimePercentage; }
@@ -211,7 +215,19 @@ public partial class MainPage : ContentPage
 
     private void notificationButton_Clicked(object sender, EventArgs e)
     {
-        var toast = Toast.Make("Notifications Off", CommunityToolkit.Maui.Core.ToastDuration.Short, 18);
-        toast.Show();
+        if (notificationsVisible)
+        {
+            new NotificationManager().HideAllNotifications();
+            var toast = Toast.Make("Notifications Off", CommunityToolkit.Maui.Core.ToastDuration.Short, 18);
+            toast.Show();
+        }
+        else
+        {
+            var toast = Toast.Make("Notifications On", CommunityToolkit.Maui.Core.ToastDuration.Short, 18);
+            toast.Show();
+        }
+
+        notificationsVisible = !notificationsVisible;
+        
     }
 }
