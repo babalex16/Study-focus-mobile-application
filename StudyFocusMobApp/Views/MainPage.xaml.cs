@@ -3,15 +3,17 @@ using System.Xml.Linq;
 using Plugin.LocalNotification;
 using Syncfusion.Maui.Popup;
 using Syncfusion.Maui.Sliders;
+using CommunityToolkit.Maui.Alerts;
+
 namespace StudyFocusMobApp;
 
 public partial class MainPage : ContentPage
 {
     private readonly CancellationTokenSource _cancellationTokenSource = new();
     // fields initialized to set up clock in case when user does not click settings and instantly clicks play after the boot
-    private int _remainingTimeInSeconds = 20; // used for both work and rest for main clock
-    private int _workingTimeInSeconds = 20;
-    private int _restTimeInSeconds = 10;
+    private int _remainingTimeInSeconds = 1800; // used for both work and rest for main clock
+    private int _workingTimeInSeconds = 1800;
+    private int _restTimeInSeconds = 300;
     private int _cycleNumber = 3;
     private int _cyclesRemaining = 3;
     private bool _isRunning = false;
@@ -205,5 +207,11 @@ public partial class MainPage : ContentPage
         {
 
         }
+    }
+
+    private void notificationButton_Clicked(object sender, EventArgs e)
+    {
+        var toast = Toast.Make("Notifications Off", CommunityToolkit.Maui.Core.ToastDuration.Short, 18);
+        toast.Show();
     }
 }

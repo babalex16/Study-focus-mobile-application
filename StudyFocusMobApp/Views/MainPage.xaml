@@ -20,7 +20,7 @@
                 <Label x:Name="CycleLabel"
                        Grid.Column="1"
                        Grid.Row="0"
-                       Text=" "
+                       Text="Cycle № "
                        TextColor="#B3631F"
                        FontFamily="Lobster-Regular"
                        FontSize="20"
@@ -53,6 +53,7 @@
                                 <gauge:GaugeAnnotation>
                                     <gauge:GaugeAnnotation.Content>
                                         <Label x:Name="RemainingTimeLabel"
+                                               Text="30:00"
                                                WidthRequest="60"    
                                                FontSize="24"
                                                FontFamily="Lobster-Regular"
@@ -88,7 +89,9 @@
 
         <HorizontalStackLayout Padding="20" Margin="20" Spacing="20"  HorizontalOptions="Center">
             <!-- bottom controls -->
-            <ImageButton Source="ic_notification.png"
+            <ImageButton  x:Name="notificationButton"
+                          Clicked="notificationButton_Clicked"
+                            Source="ic_notification.png"
                          MaximumHeightRequest="70"></ImageButton>
             <ImageButton Source="ic_note.png"
                          MaximumHeightRequest="70"></ImageButton>

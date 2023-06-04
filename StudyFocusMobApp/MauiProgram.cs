@@ -1,6 +1,7 @@
 ﻿using Plugin.LocalNotification;
 using StudyFocusMobApp.Services;
 using Syncfusion.Maui.Core.Hosting;
+using CommunityToolkit.Maui;
 
 namespace StudyFocusMobApp;
 
@@ -19,6 +20,7 @@ public static class MauiProgram
 				fonts.AddFont("Lobster-Regular.ttf", "Lobster-Regular");
 
             });
+        builder.UseMauiApp<App>().UseMauiCommunityToolkit();
         builder.ConfigureSyncfusionCore();
 
         string dbPath = FileAccessHelper.GetLocalFilePath("todolist.db3");
