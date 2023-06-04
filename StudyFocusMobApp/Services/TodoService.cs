@@ -58,7 +58,7 @@ namespace StudyFocusMobApp.Services
             try
             {
                 await Init();
-                result = await conn.DeleteAsync(id);
+                result = await conn.DeleteAsync<TodoItem>(id);
                 StatusMessage = string.Format("{0} record(s) deleted )", result);
             }
             catch (Exception ex)

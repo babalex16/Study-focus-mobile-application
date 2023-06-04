@@ -31,11 +31,13 @@
                    Margin="20,0,0,0"
             />
         </Frame>
-       
 
-        <Button Text="Add Item"
+        <Button Text="Delete Item"
             Grid.Row="1"
-            Clicked="OnNewButtonClicked" />
+            Clicked="Button_Clicked"/>
+        <!--<Button Text="Add Item"
+            Grid.Row="1"
+            Clicked="OnNewButtonClicked" />-->
 
         <Label x:Name="statusMessage"
            Grid.Row="2" />

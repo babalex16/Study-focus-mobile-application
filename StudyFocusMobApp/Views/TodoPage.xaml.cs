@@ -34,4 +34,14 @@ public partial class TodoPage : ContentPage
         //await App.TodoSvc.DeleteTodoItem(id);
         //statusMessage.Text = App.TodoSvc.StatusMessage;
     }
+
+    private async void Button_Clicked(object sender, EventArgs e)
+    {
+        statusMessage.Text = "";
+
+
+        int id = int.Parse("1");
+        await App.TodoSvc.DeleteTodoItem(id);
+        statusMessage.Text = App.TodoSvc.StatusMessage;
+    }
 }
