@@ -3,10 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="StudyFocusMobApp.StatisticsPage"
              Title="StatisticsPage">
-    <VerticalStackLayout>
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Center">
+        <Label Text="App Usage Time:"
+               FontFamily="Lobster-Regular"
+               FontSize="30"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               TextColor="#B3631F"
+               Margin="0,40,0,0"/>
+        <Label x:Name="appUsageLabel"
+               FontFamily="Lobster-Regular"
+               FontSize="25"
+               TextColor="#B3631F"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
         <Label 
-            Text="TODO: Statistics"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+               Text="Pomodoros Finished:"
+               FontFamily="Lobster-Regular"
+               FontSize="30"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               TextColor="#B3631F"
+               Margin="0,40,0,0"/>
+        <Label x:Name="pomodorosLabel"
+               FontFamily="Lobster-Regular"
+               FontSize="25"
+               TextColor="#B3631F"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+    </StackLayout>
 </ContentPage>

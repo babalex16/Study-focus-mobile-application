@@ -42,7 +42,7 @@ public partial class TodoPage : ContentPage
     private async void deleteButton_Clicked(object sender, EventArgs e)
     {
 
-        int id = int.Parse("1");
+        int id = int.Parse("10");
         await App.TodoSvc.DeleteTodoItem(id);
     }
 }

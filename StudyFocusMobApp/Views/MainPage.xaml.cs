@@ -4,7 +4,6 @@ using Plugin.LocalNotification;
 using Syncfusion.Maui.Popup;
 using Syncfusion.Maui.Sliders;
 using CommunityToolkit.Maui.Alerts;
-using Android.App;
 using StudyFocusMobApp.Services;
 using NotificationManager = StudyFocusMobApp.Services.NotificationManager;
 using Plugin.Maui.Audio;
@@ -27,6 +26,7 @@ public partial class MainPage : ContentPage
     private bool notificationsVisible = true;
     private readonly IAudioManager audioManager;
     private IAudioPlayer audioPlayer;
+    private DateTime appStartTime;
 
     public double CoveredTimePercentage
     {
@@ -41,9 +41,27 @@ public partial class MainPage : ContentPage
     public MainPage(IAudioManager audioManager)
     {
         InitializeComponent();
+        appStartTime = DateTime.Now;
         this.audioManager = audioManager;
         BindingContext = this;
         LocalNotificationCenter.Current.NotificationActionTapped += Current_NotificationActionTapped;
+    }
+    protected override void OnDisappearing()
+    {
+        base.OnDisappearing();
+
+        TimeSpan appUsageTime = DateTime.Now - appStartTime;
+        appStartTime = DateTime.Now;
+        int totalSeconds = (int)appUsageTime.TotalSeconds;
+
+        // Retrieve the current value from preferences
+        int existingAppUsageTime = Preferences.Get("AppUsageTime", 0);
+
+        // Add the new app usage time to the existing value
+        int updatedAppUsageTime = existingAppUsageTime + totalSeconds;
+
+        // Store the updated value in preferences
+        Preferences.Set("AppUsageTime", updatedAppUsageTime);
     }
 
     private async void OnPlayPauseButtonClicked(object sender, EventArgs e)
@@ -108,6 +126,7 @@ public partial class MainPage : ContentPage
                 if (_cyclesRemaining <= 0)
                 {
                     _cancellationTokenSource?.Cancel();
+                    PomodorosCount();
                 }
             }
 
@@ -121,6 +140,18 @@ public partial class MainPage : ContentPage
             _cancellationTokenSource?.Cancel();
             UpdatePlayPauseButtonSource();
         }
+    }
+
+    private void PomodorosCount()
+    {
+        // Retrieve the current value from preferences
+        int existingPomodorosFinished = Preferences.Get("pomodorosFinished", 0);
+
+        // Add 1 more cycle to the count
+        int updatedAppUsageTime = existingPomodorosFinished+1;
+
+        // Store the updated value in preferences
+        Preferences.Set("AppUsageTime", updatedAppUsageTime);
     }
 
     private void SendNotification()
