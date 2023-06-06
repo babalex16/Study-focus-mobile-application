@@ -15,6 +15,6 @@ namespace StudyFocusMobApp.Models
         
         [MaxLength(100)]
         public string Description { get; set; }
-        //public bool Done { get; set; }
+        
     }
 }

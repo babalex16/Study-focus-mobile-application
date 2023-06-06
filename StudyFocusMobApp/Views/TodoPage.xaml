@@ -30,43 +30,34 @@
             />
         </Frame>
 
-        
-        <CollectionView x:Name="todoList" Grid.Row="1">
+
+        <CollectionView x:Name="todoList" Grid.Row="1" SelectionMode="None">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Frame BorderColor="Gray"
-                               CornerRadius="5"
-                               Padding="15, 6, 6, 6"
-                               Margin="5"
-                               >
-                        <Grid >
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto" />
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
-
-                            <CheckBox x:Name="taskCheckBox"
-                                      CheckedChanged="taskCheckBox_CheckedChanged"
-                                      IsChecked="false" 
-                                      Margin="10"
-                                      />
-
-                            <Label Grid.Column="1" 
-                                   Text="{Binding Description}"
-                                   VerticalOptions="Center"/>
-
-                        </Grid>
-                    </Frame>
+                    <SwipeView>
+                        <SwipeView.RightItems>
+                            <SwipeItems Mode="Reveal" SwipeBehaviorOnInvoked="Auto" >
+                                <SwipeItem Text="Delete" 
+                                           BackgroundColor="Red" 
+                                           Invoked="OnSwipeDeleteClicked"
+                                           CommandParameter="{Binding .}" />
+                            </SwipeItems>
+                        </SwipeView.RightItems>
+                        <Frame Margin="5, 0, 5, 0">
+                            <Grid >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Margin="15, 8, 8, 8" Grid.Column="1" Text="{Binding Description}" VerticalOptions="Center" />
+                            </Grid>
+                        </Frame>
+                    </SwipeView>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
 
         <HorizontalStackLayout Padding="20" Margin="10" Spacing="70"  HorizontalOptions="Center" Grid.Row="2">
-            <ImageButton  x:Name="deleteButton"
-                         MaximumHeightRequest="70"
-                          Source="ic_delete.png"
-                         Clicked="deleteButton_Clicked">
-            </ImageButton>
             <ImageButton Source="ic_add.png"
                          MaximumHeightRequest="70"
                          Clicked="OnNewButtonClicked"></ImageButton>
