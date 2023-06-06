@@ -8,7 +8,7 @@
     Shell.TabBarIsVisible="false"
     Shell.BackgroundColor="#F3EBA3"
     FlyoutIcon="menu.png">
-    
+
 
     <FlyoutItem Title="Dashboard" FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent

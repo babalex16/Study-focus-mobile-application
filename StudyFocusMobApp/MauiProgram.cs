@@ -8,17 +8,17 @@ namespace StudyFocusMobApp;
 
 public static class MauiProgram
 {
-	public static MauiApp CreateMauiApp()
-	{
-		var builder = MauiApp.CreateBuilder();
-		builder
-			.UseMauiApp<App>()
+    public static MauiApp CreateMauiApp()
+    {
+        var builder = MauiApp.CreateBuilder();
+        builder
+            .UseMauiApp<App>()
             .UseLocalNotification()
             .ConfigureFonts(fonts =>
-			{
-				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-				fonts.AddFont("Lobster-Regular.ttf", "Lobster-Regular");
+            {
+                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                fonts.AddFont("Lobster-Regular.ttf", "Lobster-Regular");
 
             });
         builder.UseMauiApp<App>().UseMauiCommunityToolkit();
@@ -27,8 +27,8 @@ public static class MauiProgram
         string dbPath = FileAccessHelper.GetLocalFilePath("todolist.db3");
         builder.Services.AddSingleton<TodoService>(s => ActivatorUtilities.CreateInstance<TodoService>(s, dbPath));
 
-		builder.Services.AddSingleton(AudioManager.Current);
-		builder.Services.AddTransient<MainPage>();
+        builder.Services.AddSingleton(AudioManager.Current);
+        builder.Services.AddTransient<MainPage>();
         return builder.Build();
-	}
+    }
 }

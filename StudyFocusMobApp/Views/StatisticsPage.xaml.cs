@@ -2,9 +2,9 @@ namespace StudyFocusMobApp;
 
 public partial class StatisticsPage : ContentPage
 {
-	public StatisticsPage()
-	{
-		InitializeComponent();
+    public StatisticsPage()
+    {
+        InitializeComponent();
         RefreshAppUsageTime();
     }
     protected override void OnAppearing()

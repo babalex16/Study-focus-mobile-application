@@ -5,7 +5,7 @@
              x:Class="StudyFocusMobApp.TodoPage"
              BackgroundColor="{DynamicResource Light}"
              Title="TodoPage">
-    
+
     <Grid Padding="5" RowSpacing="1" ColumnSpacing="1">
 
         <Grid.RowDefinitions>
@@ -63,5 +63,5 @@
                          Clicked="OnNewButtonClicked"></ImageButton>
         </HorizontalStackLayout>
     </Grid>
-    
+
 </ContentPage>

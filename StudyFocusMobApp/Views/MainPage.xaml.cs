@@ -1,10 +1,6 @@
-﻿using System.Timers;
-using System.Xml.Linq;
-using Plugin.LocalNotification;
-using Syncfusion.Maui.Popup;
+﻿using Plugin.LocalNotification;
 using Syncfusion.Maui.Sliders;
 using CommunityToolkit.Maui.Alerts;
-using StudyFocusMobApp.Services;
 using NotificationManager = StudyFocusMobApp.Services.NotificationManager;
 using Plugin.Maui.Audio;
 
@@ -148,7 +144,7 @@ public partial class MainPage : ContentPage
         int existingPomodorosFinished = Preferences.Get("pomodorosFinished", 0);
 
         // Add 1 more cycle to the count
-        int updatedAppUsageTime = existingPomodorosFinished+1;
+        int updatedAppUsageTime = existingPomodorosFinished + 1;
 
         // Store the updated value in preferences
         Preferences.Set("AppUsageTime", updatedAppUsageTime);
@@ -263,13 +259,32 @@ public partial class MainPage : ContentPage
         }
 
         notificationsVisible = !notificationsVisible;
-        
+
     }
 
     private async void musicButton_Clicked(object sender, EventArgs e)
     {
-        var audioFile = await FileSystem.OpenAppPackageFileAsync("lofi.mp3");
-        audioPlayer = audioManager.CreatePlayer(audioFile);
-        audioPlayer.Play();
+        if (audioPlayer == null)
+        {
+            // Create a new player if it hasn't been initialized yet
+            var audioFile = await FileSystem.OpenAppPackageFileAsync("lofi.mp3");
+            audioPlayer = audioManager.CreatePlayer(audioFile);
+            audioPlayer.Play();
+        }
+        else
+        {
+            if (audioPlayer.IsPlaying)
+            {
+                audioPlayer.Pause();
+            }
+            else
+            {
+                audioPlayer.Play();
+            }
+        }
+    }
+    private void ApplicationClosing(object sender, EventArgs e)
+    {
+        audioPlayer?.Dispose();
     }
 }

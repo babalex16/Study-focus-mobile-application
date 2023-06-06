@@ -4,9 +4,9 @@ namespace StudyFocusMobApp;
 
 public partial class TodoPage : ContentPage
 {
-	public TodoPage()
-	{
-		InitializeComponent();
+    public TodoPage()
+    {
+        InitializeComponent();
     }
     protected async override void OnAppearing()
     {
