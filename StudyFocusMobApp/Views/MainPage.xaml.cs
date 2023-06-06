@@ -9,7 +9,7 @@ namespace StudyFocusMobApp;
 public partial class MainPage : ContentPage
 {
     private readonly CancellationTokenSource _cancellationTokenSource = new();
-    // fields initialized to set up clock in case when user does not click settings and instantly clicks play after the boot
+    // Fields initialized to set up clock in case when user does not click settings and instantly clicks play after the boot
     private int _remainingTimeInSeconds = 1800; // used for both work and rest for main clock
     private int _workingTimeInSeconds = 1800;
     private int _restTimeInSeconds = 300;
@@ -18,12 +18,13 @@ public partial class MainPage : ContentPage
     private bool _isRunning = false;
     private bool _isWorkingCycle = false;
     private bool _isPaused = false;
-    private double _coveredTimePercentage = 0.0; // field binded to the graphical view
+    private double _coveredTimePercentage = 0.0; // field bound to the clock
     private bool notificationsVisible = true;
     private readonly IAudioManager audioManager;
     private IAudioPlayer audioPlayer;
     private DateTime appStartTime;
-
+    
+    // Property for the covered time percentage
     public double CoveredTimePercentage
     {
         get { return _coveredTimePercentage; }
@@ -45,7 +46,8 @@ public partial class MainPage : ContentPage
     protected override void OnDisappearing()
     {
         base.OnDisappearing();
-
+        
+        // Calculate app usage time and store it in preferences
         TimeSpan appUsageTime = DateTime.Now - appStartTime;
         appStartTime = DateTime.Now;
         int totalSeconds = (int)appUsageTime.TotalSeconds;
@@ -64,6 +66,7 @@ public partial class MainPage : ContentPage
     {
         if (!_isRunning)
         {
+            // Start the timer if it's not running
             _isRunning = true;
             _isWorkingCycle = true;
             UpdatePlayPauseButtonSource();
@@ -73,6 +76,7 @@ public partial class MainPage : ContentPage
                 CycleLabel.Text = "Cycle № " + (_cycleNumber - _cyclesRemaining + 1).ToString();
                 if (!_isPaused)
                 {
+                    // Set the remaining time based on the current cycle
                     if (_isWorkingCycle)
                     {
                         _remainingTimeInSeconds = _workingTimeInSeconds;
@@ -108,7 +112,8 @@ public partial class MainPage : ContentPage
                     }
                     _remainingTimeInSeconds--;
                 }
-
+                
+                // Switch between work and rest cycles
                 if (_isWorkingCycle)
                 {
                     _isWorkingCycle = false;
@@ -121,16 +126,19 @@ public partial class MainPage : ContentPage
 
                 if (_cyclesRemaining <= 0)
                 {
+                    // Finish the timer cycle
                     _cancellationTokenSource?.Cancel();
                     PomodorosCount();
                 }
             }
-
+            
+            //Reset the timer and update the UI
             _isRunning = false;
             UpdatePlayPauseButtonSource();
         }
         else
         {
+            // Pause the timer if it's running
             _isPaused = true;
             _isRunning = false;
             _cancellationTokenSource?.Cancel();
@@ -191,6 +199,7 @@ public partial class MainPage : ContentPage
 
     private void CalculatePercentage(int time)
     {
+        //Helper method used to convert the time to percentage   
         CoveredTimePercentage = Math.Round(100 - ((double)_remainingTimeInSeconds / (double)time) * 100, 2);
     }
 
@@ -208,6 +217,7 @@ public partial class MainPage : ContentPage
 
     private void workMinuteSlider_ValueChanged(object sender, SliderValueChangedEventArgs e)
     {
+        // Updates the working time based on the slider value change
         int value = (int)e.NewValue;
         _workingTimeInSeconds = value * 60;
         _remainingTimeInSeconds = value * 60;
@@ -215,12 +225,14 @@ public partial class MainPage : ContentPage
 
     private void restMinuteSlider_ValueChanged(object sender, SliderValueChangedEventArgs e)
     {
+        // Updates the rest time based on the slider value change
         int value = (int)e.NewValue;
         _restTimeInSeconds = value * 60;
     }
 
     private void cycleSlider_ValueChanged(object sender, SliderValueChangedEventArgs e)
     {
+        // Updates the cycle number based on the slider value change
         int value = (int)e.NewValue;
         _cycleNumber = value;
         _cyclesRemaining = value;
@@ -236,11 +248,11 @@ public partial class MainPage : ContentPage
     {
         if (e.IsDismissed)
         {
-
+            // Handle the notification dismissal action
         }
         else if (e.IsTapped)
         {
-
+            // Handle the notification tap action
         }
     }
 
@@ -273,6 +285,7 @@ public partial class MainPage : ContentPage
         }
         else
         {
+            // Pause or resume the audio player based on its current state
             if (audioPlayer.IsPlaying)
             {
                 audioPlayer.Pause();
@@ -285,6 +298,7 @@ public partial class MainPage : ContentPage
     }
     private void ApplicationClosing(object sender, EventArgs e)
     {
+        //Dispose the audio player when the application is closing
         audioPlayer?.Dispose();
     }
 }

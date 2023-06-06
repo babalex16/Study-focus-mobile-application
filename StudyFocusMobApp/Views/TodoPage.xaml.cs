@@ -8,11 +8,13 @@ public partial class TodoPage : ContentPage
     {
         InitializeComponent();
     }
+
     protected async override void OnAppearing()
     {
         base.OnAppearing();
         await RefreshTodoItems();
     }
+
     private async Task RefreshTodoItems()
     {
         List<TodoItem> todos = await App.TodoSvc.GetAllTodoItems();

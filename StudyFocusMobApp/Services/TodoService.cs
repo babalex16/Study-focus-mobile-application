@@ -11,6 +11,7 @@ namespace StudyFocusMobApp.Services
 
         private SQLiteAsyncConnection conn;
 
+        // Service class for managing TodoItem objects
         private async Task Init()
         {
             if (conn != null)
